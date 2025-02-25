@@ -1,9 +1,22 @@
 
 .home-wrapper {
     position: relative;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-image: url('../../assets/background/back.png');
     background-size: cover;
     background-position: center;
+}
+.root-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Мінімальна висота на всю висоту екрану */
+}
+
+.content-container {
+    flex: 1; /* Займає весь доступний простір між хедером і футером */
+}
+
+.footer {
+    flex-shrink: 0; /* Футер залишається на місці і не стискається */
 }

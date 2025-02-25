@@ -36,7 +36,7 @@ export default function Header({ isHomePage }: { isHomePage: boolean }) {
                     </NavLink>
                 ))}
             </div>
-            <div className="header-btn">Записатися</div>
+            <div className="header-btn">ЗАПИСАТИСЯ</div>
         </div>
     );
 }

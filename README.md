@@ -1,1 +1,1 @@
-# New Line School
+# NewLineSchool
