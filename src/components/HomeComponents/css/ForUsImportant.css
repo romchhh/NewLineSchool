@@ -1,0 +1,119 @@
+.home-for-us-important-main-container{
+    position: relative;
+}
+.home-for-us-important-container{
+    height: 625px;
+    width: 100%;
+    background-color: #FFFFFF;
+    clip-path: ellipse(90% 100% at center bottom);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.scroll-to-see-more{
+    position: absolute;
+    z-index: 1000;
+    top: 15px;
+    right: 150px;
+    font-family: Unbounded;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22.32px;
+    letter-spacing: 1px;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    color: #AE88AD;
+}
+.scroll-to-see-more img{
+    width: 16px;
+    height: auto;
+}
+.home-for-us-important-title-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+.home-for-us-important-title{
+    font-family: Unbounded;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 45px;
+    text-align: center;
+    color: #AE88AD;
+}
+.home-for-us-important-title-subtitles-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.home-for-us-important-title-subtitle{
+    padding: 4px 10px;
+    font-family: Steppe;
+    font-family: Steppe;
+    font-weight: 600;
+    font-size: 20px;
+    border-width: 1.5px;
+    border-style: solid;
+    border-radius: 25px;
+}
+.home-for-us-important-title-subtitle.p1{
+    border-color: #FCE696;
+    color: #F7DC7C;
+}
+.home-for-us-important-title-subtitle.p2{
+    border-color: #AE88AD;
+    color: #AE88AD;
+}
+.home-for-us-important-title-subtitle.p3{
+    border-color: #A0BFBD;
+    color: #A0BFBD;
+    padding: 4px 30px;
+}
+
+.home-for-us-important-img{
+    width: 580px;
+    height: 310px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.home-for-us-important-img img{
+    width: 100%;
+    height: 100%;
+    /* border-radius: 10px; */
+    object-fit: cover;
+    object-position:bottom;
+}
+.home-for-us-important-content{
+    display: flex;   
+    gap: 50px;
+    width: 100%;
+    padding: 0 200px;
+}
+.home-for-us-important-img{
+    flex: 1;
+}
+.home-for-us-important-text-container{
+    flex: 1;
+    font-family: Steppe;
+    font-weight: 600;
+    font-size: 18px;
+    /* line-height: 28.56px; */
+    color:#414040;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    margin-right: 65px;
+}
+.home-for-us-important-text{
+    font-size: 17px;
+    padding-left: 5px;
+    line-height: 25px;
+}

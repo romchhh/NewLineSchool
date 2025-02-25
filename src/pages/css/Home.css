@@ -3,8 +3,37 @@
 .home-container {
     background-image: url('../../assets/background/back1.png');
     background-size: cover;
-    height: 100vh;
     width: 100%;
     position: relative;
     padding-top: 80px;
+}
+.home-for-us-important-main-container{
+    position: relative;
+}
+.home-for-us-important-container{
+    height: 600px;
+    width: 100%;
+    background-color: #FFFFFF;
+    clip-path: ellipse(87% 100% at center bottom);
+}
+.scroll-to-see-more{
+    position: absolute;
+    z-index: 1000;
+    top: 20px;
+    right: 150px;
+    font-family: Unbounded;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22.32px;
+    letter-spacing: 1px;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    color: #AE88AD;
+
+
+}
+.scroll-to-see-more img{
+    width: 16px;
+    height: auto;
 }

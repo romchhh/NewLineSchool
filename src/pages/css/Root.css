@@ -10,13 +10,13 @@
 .root-container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Мінімальна висота на всю висоту екрану */
+    min-height: 100%; 
 }
 
 .content-container {
-    flex: 1; /* Займає весь доступний простір між хедером і футером */
+    flex: 1; 
 }
 
-.footer {
-    flex-shrink: 0; /* Футер залишається на місці і не стискається */
-}
+/* .footer-container {
+    flex-shrink: 0; 
+} */
