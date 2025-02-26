@@ -1,5 +1,5 @@
 import "./css/ForUsImportant.css";
-import HighlightedText from "./HighlightedText";
+import HighlightedTextWithDots from "./HighlightedTextWithDots";
 export default function ForUsImportant() {
   return (
     <div className="home-for-us-important-main-container">
@@ -25,13 +25,13 @@ export default function ForUsImportant() {
             A також ми допоможемо вам підняти рівень англійської, щоб наші студенти могли:
             </div>
             <div className="home-for-us-important-text">
-            <HighlightedText colorBackground="#BFA0BEB2" colorDots="#AE88AD">Впевнено спілкуватися</HighlightedText>: вільно спілкуватися в повсякденному житті, подорожувати та будувати міжнародну кар’єру.
+            <HighlightedTextWithDots colorBackground="#BFA0BEB2" colorDots="#AE88AD">Впевнено спілкуватися</HighlightedTextWithDots>: вільно спілкуватися в повсякденному житті, подорожувати та будувати міжнародну кар’єру.
             </div>
             <div className="home-for-us-important-text">
-            <HighlightedText colorBackground="#A0BFBD66" colorDots="#A0BFBD">Скласти міжнародні іспити</HighlightedText>: успішно підготуватися до Cambridge Exams, НМТ та  ЄВІ.
+            <HighlightedTextWithDots colorBackground="#A0BFBD66" colorDots="#A0BFBD">Скласти міжнародні іспити</HighlightedTextWithDots>: успішно підготуватися до Cambridge Exams, НМТ та  ЄВІ.
             </div>
             <div className="home-for-us-important-text">
-            <HighlightedText colorBackground="#FCE69699" colorDots="#FCE696">Досягти академічних успіхів</HighlightedText>: легко розуміти навчальний матеріал та ефективно спілкуватися з викладачами
+            <HighlightedTextWithDots colorBackground="#FCE69699" colorDots="#FCE696">Досягти академічних успіхів</HighlightedTextWithDots>: легко розуміти навчальний матеріал та ефективно спілкуватися з викладачами
             </div>
           </div>
         </div>

@@ -1,0 +1,45 @@
+.styled-container-link {
+    width: 340px;
+    height: 118.5px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: transparent;
+    position: relative;
+    font-family: "Unbounded", sans-serif;
+    color: white;
+    border-radius: 20px;
+    background-image: url("src/assets/elements/container_link.png");
+    background-size: cover;
+  }
+  
+  .styled-container-link-text {
+    font-family: Steppe;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 250px;
+    text-transform: uppercase;
+
+  }
+  
+  .styled-container-link-button {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: -4px;
+    bottom: -6px;
+    cursor: pointer;
+  }
+  
+.styled-container-link-button img{
+    width: auto;
+    height: 18px;
+}
+  

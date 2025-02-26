@@ -86,7 +86,6 @@
 .home-for-us-important-img img{
     width: 100%;
     height: 100%;
-    /* border-radius: 10px; */
     object-fit: cover;
     object-position:bottom;
 }
@@ -104,7 +103,6 @@
     font-family: Steppe;
     font-weight: 600;
     font-size: 18px;
-    /* line-height: 28.56px; */
     color:#414040;
     display: flex;
     flex-direction: column;
