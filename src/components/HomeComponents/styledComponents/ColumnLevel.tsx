@@ -45,7 +45,7 @@ export default function ColumnLevel({
       <div className="column-level-container-title">{title}</div>
       {active && (
         <div className="column-level-container-active-box">
-          <img src="src/assets/elements/activeBoxLevel.svg" alt="Active Box" className="active-box-bg" />
+          <img src="src/assets/elements/activeBoxLevel.png" alt="Active Box" className="active-box-bg" />
           <div className="active-box-text">{text}</div>
         </div>
       )}
