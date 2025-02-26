@@ -1,5 +1,5 @@
 import "./css/LessonsDescriptionContainer.css";
-import HighlightedText from "./HighlightedText";
+import HighlightedText from "./styledComponents/HighlightedText";
 export default function LessonsDescriptionContainer() {
     const listOfDescriptionText=[
         <><HighlightedText colorBack="#FDECB0">Навчання проходить у процесі спілкування,</HighlightedText> тому говорити англійською ви точно навчитесь</>,

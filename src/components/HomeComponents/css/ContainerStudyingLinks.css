@@ -1,6 +1,5 @@
 .home-links-to-studying-container{
-    background: url('src/assets/background/back2.png');
-    backdrop-filter: contrast(0.85);
+    background: url('src/assets/background/backLinks.png');
     background-size: cover;
     width: 100%;
     height: 500px;

@@ -4,6 +4,9 @@ import ForUsImportant from "../components/HomeComponents/ForUsImportant";
 import ContainerStudyingLinks from "../components/HomeComponents/ContainerStudyingLinks";
 import LessonsDescriptionContainer from "../components/HomeComponents/LessonsDescriptionContainer";
 import FreeLessonContainer from "../components/HomeComponents/FreeLessonContainer";
+import LearningBenefitsContainer from "../components/HomeComponents/LearningBenefitsContainer";
+import TestContainer from "../components/HomeComponents/TestContainer";
+import ReviewsContainer from "../components/HomeComponents/ReviewsContainer";
 export default function Home() {
     return (
         <div className="home-container">
@@ -11,12 +14,12 @@ export default function Home() {
             <ForUsImportant />
             <ContainerStudyingLinks />
             <LessonsDescriptionContainer />
-            {/* <div className="home-free-lessons-container"></div> */}
             <FreeLessonContainer />
-            <div className="home-learning-benefits-container"></div>
-            <div className="home-test-container"></div>
-            <div className="home-reviews-container"></div>
-            <div className="home-free-lessons-container"></div>
+            <LearningBenefitsContainer />
+            <TestContainer />
+            {/* <div className="home-reviews-container"></div> */}
+            <ReviewsContainer/>
+            <FreeLessonContainer />
         </div>
     );
 }

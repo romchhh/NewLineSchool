@@ -1,0 +1,16 @@
+.home-free-lessons-form-input{
+    width: 100%;
+    border: none;
+    border-bottom: 1.5px solid #484848;
+    font-family: Steppe;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    color: #AE88AD;
+    outline: none;
+    padding: 4px 2px;
+}
+.home-free-lessons-form-input::placeholder{
+    color: #AE88AD;
+}

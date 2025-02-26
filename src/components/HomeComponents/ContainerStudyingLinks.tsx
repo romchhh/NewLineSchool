@@ -1,5 +1,5 @@
 import "./css/ContainerStudyingLinks.css";
-import StyledContainerLink from "./StyledContainerLink";
+import StyledContainerLink from "./styledComponents/StyledContainerLink";
 export default function ContainerStudyingLinks() {
     const studyingLinks = [
         {text: <>навчання для <br/> дітей (1-4 класи)</>, link: "/forSchoolchildren"},
@@ -16,6 +16,5 @@ export default function ContainerStudyingLinks() {
                 <StyledContainerLink key={index} link={link.link}>{link.text}</StyledContainerLink>
             ))
         }
-        {/* <StyledContainerLink>навчання для дітей (1-4 класи)</StyledContainerLink> */}
     </div>
 }

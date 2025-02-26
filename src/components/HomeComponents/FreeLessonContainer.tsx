@@ -1,19 +1,24 @@
 import "./css/FreeLessonContainer.css"
 import { useState } from "react"
+import InputFreeLessong from "./input/InputFreeLessong"
 export default function FreeLessonContainer(){
-    const [inputValue, setInputValue] = useState<string>("");
+    const [inputValueName, setInputValueName] = useState<string>("");
+    const [inputValuePhoneNumber, setInputValuePhoneNumber] = useState<string>("");
+    const [inputValueEmail, setInputValueEmail] = useState<string>("");
     return (
         <>
-            <div className="spin-arrow"></div>
             <div className="home-free-lessons-container">
                 <div className="home-free-lessons-title">NEW LINE SCHOOL</div>
                 <div className="home-free-lessons-content">
+                    <div className="spin-arrow">
+                        <img src="src/assets/elements/spin_arrow.png" alt="" />
+                    </div>
                     <div className="home-free-lessons-text">отримай безкоштовний урок!</div>
                     <form action="" className="home-free-lessons-form">
                         <div className="home-free-lessons-form-inputs">
-                            <input type="text" value={inputValue} onChange={(e)=>{
-                                setInputValue(e.target.value)
-                            }}/>
+                            <InputFreeLessong inputValue={inputValueName} setInputValue={setInputValueName} placeholder="ім'я" type="text"/>
+                            <InputFreeLessong inputValue={inputValuePhoneNumber} setInputValue={setInputValuePhoneNumber} placeholder="телефон" type="tel"/>
+                            <InputFreeLessong inputValue={inputValueEmail} setInputValue={setInputValueEmail} placeholder="пошта" type="email"/>
                         </div>
                         <button className="home-free-lessons-form-btn">ВІДПРАВИТИ</button>
                     </form>
