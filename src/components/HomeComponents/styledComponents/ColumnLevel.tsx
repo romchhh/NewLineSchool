@@ -19,11 +19,10 @@ export default function ColumnLevel({
   text,
 }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
-
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (active && containerRef.current && !containerRef.current.contains(event.target as Node)) {
-        onClick(); // Закриваємо, якщо клік поза компонентом
+        onClick(); 
       }
     };
 

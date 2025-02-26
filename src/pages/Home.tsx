@@ -17,9 +17,9 @@ export default function Home() {
             <FreeLessonContainer />
             <LearningBenefitsContainer />
             <TestContainer />
-            {/* <div className="home-reviews-container"></div> */}
             <ReviewsContainer/>
             <FreeLessonContainer />
+            <div style={{height:135, backgroundColor:"#ffffff"}}></div>
         </div>
     );
 }
