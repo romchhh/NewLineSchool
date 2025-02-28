@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router"
 import Root from "./pages/Root"
 import Home from "./pages/Home"
+import ForSchoolchildren from "./pages/ForSchoolchildren"
 export default function App(){
   const router = createBrowserRouter([
     {
@@ -13,9 +14,7 @@ export default function App(){
         },
         {
           path: "/forSchoolchildren",
-          element: <div>
-            <div>For Schoolchildren</div>
-            </div>
+          element: <ForSchoolchildren />
         },
         {
           path: "/forAdults",

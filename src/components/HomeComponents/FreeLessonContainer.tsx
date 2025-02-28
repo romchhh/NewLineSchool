@@ -1,7 +1,7 @@
 import "./css/FreeLessonContainer.css"
 import { useState } from "react"
 import InputFreeLessong from "./input/InputFreeLessong"
-export default function FreeLessonContainer(){
+export default function FreeLessonContainer({paddingTop=75}:{paddingTop?:number}){
     const [inputValueName, setInputValueName] = useState<string>("");
     const [inputValuePhoneNumber, setInputValuePhoneNumber] = useState<string>("");
     const [inputValueEmail, setInputValueEmail] = useState<string>("");
@@ -11,7 +11,7 @@ export default function FreeLessonContainer(){
     }
     return (
         <>
-            <div className="home-free-lessons-container">
+            <div className="home-free-lessons-container" style={{paddingTop:paddingTop}}>
                 <div className="home-free-lessons-title">NEW LINE SCHOOL</div>
                 <div className="home-free-lessons-content">
                     <div className="spin-arrow">
