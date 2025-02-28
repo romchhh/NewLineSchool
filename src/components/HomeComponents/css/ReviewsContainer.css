@@ -6,6 +6,7 @@
     flex-direction: column;
     align-items: center;
     overflow-x: hidden; 
+    background-color: #ffffff;
 }
 
 .home-reviews-boxes-container {
