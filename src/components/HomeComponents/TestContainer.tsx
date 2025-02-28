@@ -1,9 +1,9 @@
 import "./css/TestContainer.css";
 import HighlightedTextWithDots from "./styledComponents/HighlightedTextWithDots";
-import ColumnLevel from "./styledComponents/columnLevel";
-import { useState } from "react";
+import ColumnLevel from "./styledComponents/ColumnLevel";
+import { useState, JSX } from "react";
 
-export default function TestContainer() {
+export default function TestContainer({backImg, footer, backIsImg=true}: {backImg: string; footer?: JSX.Element, backIsImg?: boolean}) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null); 
 
   const textLevel = "Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.";
@@ -17,40 +17,45 @@ export default function TestContainer() {
   ];
 
   return (
-    <div className="home-test-container">
-      <div className="home-test-container-left">
-        <div className="home-test-container-left-title">не знаєш який курс тобі потрібен?</div>
-        <div className="home-test-container-left-p">
-          Пройди наш{" "}
-          <HighlightedTextWithDots colorText="#ffffff" colorBackground="#767676B2" colorDots="#484848" widthDots={5} widthBorder={2} rightSide={false}>
-            безкоштовний тест на рівень
-          </HighlightedTextWithDots>{" "}
-          <HighlightedTextWithDots colorText="#ffffff" colorBackground="#767676B2" colorDots="#484848" widthDots={5} widthBorder={2} leftSide={false}>
-            англійської мови
-          </HighlightedTextWithDots>{" "}
-          та дізнайся <br />
-          який курс буде кращим рішенням для тебе
+    <div className="home-test-container-with-footer" style={{backgroundImage: footer ? `url(${backImg})`: "none" }}>
+      <div className="home-test-container" style={{backgroundImage: backIsImg === false ? "none" : `url(${backImg})`}}>
+        <div className="home-test-container-left">
+          <div className="home-test-container-left-title">не знаєш який курс тобі потрібен?</div>
+          <div className="home-test-container-left-p">
+            Пройди наш{" "}
+            <HighlightedTextWithDots colorText="#ffffff" colorBackground="#767676B2" colorDots="#484848" widthDots={5} widthBorder={2} rightSide={false}>
+              безкоштовний тест на рівень
+            </HighlightedTextWithDots>{" "}
+            <HighlightedTextWithDots colorText="#ffffff" colorBackground="#767676B2" colorDots="#484848" widthDots={5} widthBorder={2} leftSide={false}>
+              англійської мови
+            </HighlightedTextWithDots>{" "}
+            та дізнайся <br />
+            який курс буде кращим рішенням для тебе
+          </div>
+          <button className="home-test-container-left-btn">пройти тест</button>
         </div>
-        <button className="home-test-container-left-btn">пройти тест</button>
-      </div>
 
-      <div className="home-test-container-right">
-        <div className="home-test-container-right-title">
-          натискай на свій рівень та дивись корисну інформацію про нього
+        <div className="home-test-container-right">
+          <div className="home-test-container-right-title">
+            натискай на свій рівень та дивись корисну інформацію про нього
+          </div>
+          <div className="home-test-container-right-diagram-container">
+            {columnLevelData.map((item, index) => (
+              <ColumnLevel
+                key={index}
+                title={item.level}
+                height={(index + 1) * 42 * (index + 1 === 1 ? 1.3 : 1)}
+                active={activeIndex === index} 
+                onClick={() => setActiveIndex(index === activeIndex ? null : index)} 
+                index={index}
+                text={item.text}
+              />
+            ))}
+          </div>
         </div>
-        <div className="home-test-container-right-diagram-container">
-          {columnLevelData.map((item, index) => (
-            <ColumnLevel
-              key={index}
-              title={item.level}
-              height={(index + 1) * 42 * (index + 1 === 1 ? 1.3 : 1)}
-              active={activeIndex === index} 
-              onClick={() => setActiveIndex(index === activeIndex ? null : index)} 
-              index={index}
-              text={item.text}
-            />
-          ))}
-        </div>
+      </div>
+      <div style={{marginTop: 40}}>
+      {footer}
       </div>
     </div>
   );

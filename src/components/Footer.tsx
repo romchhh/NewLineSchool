@@ -1,6 +1,6 @@
 import "./css/Footer.css";
-export default function Footer() {
-    return <div className="footer-container">
+export default function Footer({background}: {background: boolean}) {
+    return <div className="footer-container" style={{backgroundImage: background ? "url('src/assets/background/back-footer.png')": "none", paddingTop: background ? 80 : 0, height: background? 400: 350}}>
         <div className="footer-info">
             <div className="footer-info-adress-container">
                 <div className="footer-info-adress">

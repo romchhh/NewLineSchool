@@ -38,7 +38,7 @@
     gap: 25px;
 }
 .expanded-folder-content-body-left{
-    flex: 7;
+    flex: 9;
     /* background-color: black; */
     display: flex;
     flex-direction: column;
@@ -53,6 +53,7 @@
 .expanded-folder-content-body-left-upper-part1{
     flex: 1;
     height: 300px;
+    width: 535px;
     background-image: url("src/assets/elements/containerLeftUpCorener.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -128,10 +129,6 @@
 .lower-part-text-item-img img{
     width: 100%;
 }
-.expanded-folder-content-body-right{
-    flex: 4;
-    background-color: black;
-} 
 .expanded-folder-content-extra-container{
     display: flex;
     justify-content: center;
@@ -150,19 +147,20 @@
     color:#484848
 }
 .folder-content-body{
-    height: 550px;
+    height: 530px;
     width: 1300px;
+    /* padding-bottom: 100px; */
     display: flex;
-    /* gap: 15px; */
+    gap: 15px;
 }
 .folder-content-body-info-container{
     background-image: url("src/assets/elements/containerLeftUpCorenerLarger.png");
     background-size: contain;
     background-repeat: no-repeat;
-    flex: 1;
+    flex: 9;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 8px;
     padding: 30px 0 30px 20px;
 }
 .folder-content-body-info-container-title{
@@ -172,10 +170,10 @@
     line-height: 24px;
     color: #AE88AD;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
 }
 .folder-content-body-img{
-    flex: 1;
+    flex: 9;
     border-radius: 23.58px;
     overflow: hidden;
 }
@@ -197,7 +195,11 @@
     font-family: SteppeBold;
 }
 .folder-content-body-info-studying{
-    background-color: black;
-    flex: 1;
-    margin-left: 20px;
+    flex: 11;
+    margin-left: 10px;
 }
+
+.expanded-folder-content-body-right{
+    flex: 6;
+    /* background-color: black; */
+} 

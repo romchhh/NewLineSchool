@@ -54,6 +54,18 @@ export default function ForSchoolchildren() {
         "“Домашки” є і завжди будуть😁",
       ],
       bottomExtraCon: -60,
+      bodyCenterElements:[
+        <>Тривалість курсу: <span>10 місяців (Вересень-Червень)</span></>,
+        <>Одне заняття: <span>60 хв</span></>,
+        <>Періодичність: <span>2 рази на тиждень</span></>,
+        <>Дітей у групі: <span>до 10 учнів</span></>,
+        <>Формат: <span>Офлайн, Онлайн, або Комбінований</span></>,
+        <>Вартість групового заняття: <span>200грн/60хв</span></>,
+      ],
+      bodyBottomElements:[
+        <>Вартість індивідуального заняття: <span>600грн</span></>,
+        <>Навчальний Модуль (на місяць):<span>8 занять 1600 грн</span></>
+      ],
     },
     {
       backgroundImg: "src/assets/elements/folderElement2.png",
@@ -107,8 +119,32 @@ export default function ForSchoolchildren() {
         "Граматичний клуб для підлітків",
       ],
       bottomExtraCon: -80,
+      bodyCenterElements:[
+        <>Тривалість курсу: <span>10 місяців (Вересень-Червень)</span></>,
+        <>Одне заняття: <span>60 хв</span></>,
+        <>Періодичність: <span>2 рази на тиждень</span></>,
+        <>Дітей у групі: <span>до 10 учнів</span></>,
+        <>Формат: <span>Офлайн, Онлайн, або Комбінований</span></>,
+        <>Вартість групового заняття: <span>200грн/60хв</span></>,
+      ],
+      bodyBottomElements:[
+        <>Вартість індивідуального заняття: <span>600грн</span></>,
+        <>Навчальний Модуль (на місяць):<span>8 занять 1600 грн</span></>
+      ],
     },
   ];
+
+  const bodyCenterElements=[
+    <>Тривалість курсу: <span>10 місяців (Вересень-Червень)</span></>,
+    <>Одне заняття: <span>60 хв</span></>,
+    <>Дітей у групі: <span>до 6 учнів</span></>,
+    <>Формат: <span>Офлайн, Онлайн, або Комбінований</span></>,
+    <>Вартість групового заняття: <span>від 250грн/60хв</span></>,
+  ]
+  const bodyBottomElements=[
+    <>Вартість індивідуального заняття: <span>від 750грн/60хв</span></>
+  ];
+
   return (
     <div className="for-schoolchildren-container">
       <SchoolchildrenBanner />
@@ -126,6 +162,8 @@ export default function ForSchoolchildren() {
             lowerLeftPartText={data.lowerLeftPartText}
             lowerRightPartText={data.lowerRightPartText}
             bottomExtraCon={data.bottomExtraCon}
+            bodyCenterElements={data.bodyCenterElements}
+            bodyBottomElements={data.bodyBottomElements}
             type="expanded"
           />
         );
@@ -140,6 +178,8 @@ export default function ForSchoolchildren() {
           </>
         }
         backgroundImg="src/assets/elements/folderElement3.png"
+        bodyCenterElements={bodyCenterElements}
+        bodyBottomElements={bodyBottomElements}
         type="simple"
       />
       <FreeLessonContainer paddingTop={20}/>

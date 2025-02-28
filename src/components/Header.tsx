@@ -9,7 +9,7 @@ export default function Header({ isHomePage }: { isHomePage: boolean }) {
         { name: "для школярів", path: "/forSchoolchildren" },
         { name: "для дорослих", path: "/forAdults" },
         { name: "підготовка до cambridge exams", path: "/prepareForExams" },
-        { name: "розмовні клуби", path: "/clubs" },
+        { name: "розмовні клуби", path: "/ourClubs" },
         { name: "контакти", path: "/contacts" }
     ];
 

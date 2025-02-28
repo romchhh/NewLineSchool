@@ -16,7 +16,7 @@ export default function Home() {
             <LessonsDescriptionContainer />
             <FreeLessonContainer />
             <LearningBenefitsContainer />
-            <TestContainer />
+            <TestContainer backImg="src/assets/background/backForTest.png"/>
             <ReviewsContainer/>
             <FreeLessonContainer />
             <div style={{height:135, backgroundColor:"#ffffff"}}></div>

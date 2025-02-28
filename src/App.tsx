@@ -2,6 +2,9 @@ import { createBrowserRouter, RouterProvider } from "react-router"
 import Root from "./pages/Root"
 import Home from "./pages/Home"
 import ForSchoolchildren from "./pages/ForSchoolchildren"
+import ForAdults from "./pages/ForAdults"
+import PrepareForExams from "./pages/PrepareForExams"
+import OurClubs from "./pages/OurClubs"
 export default function App(){
   const router = createBrowserRouter([
     {
@@ -18,15 +21,15 @@ export default function App(){
         },
         {
           path: "/forAdults",
-          element: <div>For Adults</div>
+          element: <ForAdults />
         },
         {
           path: "/prepareForExams",
-          element: <div>Prepare for Exams</div>
+          element: <PrepareForExams />
         },
         {
-          path: "/clubs",
-          element: <div>Clubs</div>
+          path: "/ourClubs",
+          element: <OurClubs />
         },
         {
           path: "/contacts",

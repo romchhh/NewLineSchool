@@ -1,9 +1,7 @@
 
 
 .footer-container{
-    height: 400px;
     width: 100%;
-    background-image: url('../../assets/background/back-footer.png');
     background-size: cover;
     font-family: Steppe;
     display: flex;
@@ -11,13 +9,11 @@
     align-items: center;
     flex-direction: column;
     gap: 50px;
-    padding-top: 80px;
 }
 .footer-info{
     display: flex;
     justify-content: center;
     align-items: start;
-    /* gap: 100px; */
     width: 100%;
     padding-left: 100px;
 }

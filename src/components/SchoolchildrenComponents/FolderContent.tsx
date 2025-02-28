@@ -1,5 +1,6 @@
 import "./css/FolderContent.css";
 import { ReactNode } from "react";
+import ContainerAboutLessons from "./ContainerAboutLessons";
 interface FolderContentProps {
   backgroundImg: string;
   title: ReactNode;
@@ -12,6 +13,8 @@ interface FolderContentProps {
   lowerRightPartText?: string[] | undefined;
   bottomExtraCon?: number;
   type: string;
+  bodyCenterElements: ReactNode[];
+  bodyBottomElements: ReactNode[];
 }
 
 export default function FolderContent({
@@ -26,7 +29,10 @@ export default function FolderContent({
   lowerRightPartText,
   bottomExtraCon,
   type,
+  bodyCenterElements,
+  bodyBottomElements,
 }: FolderContentProps) {
+
   let body;
   if (type === "expanded") {
     body = (
@@ -84,7 +90,9 @@ export default function FolderContent({
             </div>
           </div>
         </div>
-        <div className="expanded-folder-content-body-right"></div>
+        <div className="expanded-folder-content-body-right">
+          <ContainerAboutLessons bodyCenterElements={bodyCenterElements} bodyBottomElements={bodyBottomElements} btnHeight={50} btnWidth={210}/>
+        </div>
       </div>
     );
   } else {
@@ -107,13 +115,16 @@ export default function FolderContent({
           <div className="folder-content-body-info-container-text p3">
             Кожний скіл такий як Listening, Use of English, Reading, Writing все
             одно прокачується ретельно, на випадок змін у формі проведення
-            вступного іспиту, так щоб нашим студентам було легко перелаштуватись.
+            вступного іспиту, так щоб нашим студентам було легко
+            перелаштуватись.
           </div>
         </div>
         <div className="folder-content-body-img">
           <img src="src/assets/images/folderImage.png" alt="" />
         </div>
-        <div className="folder-content-body-info-studying"></div>
+        <div className="folder-content-body-info-studying">
+          <ContainerAboutLessons bodyCenterElements={bodyCenterElements} bodyBottomElements={bodyBottomElements}/>
+        </div>
       </div>
     );
   }
@@ -127,7 +138,13 @@ export default function FolderContent({
         marginBottom: type === "expanded" ? 140 : 50,
       }}
     >
-      <div className="expanded-folder-content">
+      <div
+        className="expanded-folder-content"
+        style={{
+          paddingLeft: type === "expanded" ? 105 : 105,
+          paddingRight: type === "expanded" ? 105 : 80,
+        }}
+      >
         <div className="expanded-folder-content-title">{title}</div>
         {body}
       </div>
