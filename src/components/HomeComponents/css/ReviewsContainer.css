@@ -51,28 +51,4 @@
     width: 30px;
     height: auto;
 }
-/* .scroll-btn {
-    background-color: #AE88AD;
-    border: none;
-    color: white;
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 0.2s ease;
-}
 
-.scroll-btn:hover {
-    background-color: #8c6a8c;
-}
-
-.scroll-btn.left {
-    margin-right: 10px;
-}
-
-.scroll-btn.right {
-    margin-left: 10px;
-} */

@@ -48,6 +48,8 @@ export default function HighlightedTextWithDots({
         borderWidth: widthBorder,
         borderLeftWidth: leftSide ? widthBorder : 0,
         borderRightWidth: rightSide ? widthBorder : 0,
+        paddingTop: widthDots >= 10 ? 3: 6,
+        paddingBottom: widthDots >= 10 ? 0: 3,
       }}
     >
       {children}
