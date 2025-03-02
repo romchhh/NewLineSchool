@@ -31,5 +31,6 @@ export default function OurClubs() {
             })}
         </>
         <FreeLessonContainer />
+        <div style={{height:50}}></div>
     </div>
 }
