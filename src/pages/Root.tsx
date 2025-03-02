@@ -6,7 +6,6 @@ export default function Root() {
     const location = useLocation();
     const isHomePage = location.pathname === "/";
     const isForAdultsPage = location.pathname === "/forAdults";
-    console.log(isForAdultsPage);
     return (
         <div className={`root-container ${isHomePage ? "home-wrapper" : ""}`}>
             <Header isHomePage={isHomePage} />

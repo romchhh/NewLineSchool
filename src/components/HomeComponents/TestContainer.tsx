@@ -1,7 +1,8 @@
 import "./css/TestContainer.css";
 import HighlightedTextWithDots from "./styledComponents/HighlightedTextWithDots";
+import HighlightedText from "./styledComponents/HighlightedText";
 import ColumnLevel from "./styledComponents/ColumnLevel";
-import { useState, JSX } from "react";
+import { useState, JSX, useEffect} from "react";
 
 export default function TestContainer({
   backImg,
@@ -13,7 +14,7 @@ export default function TestContainer({
   backIsImg?: boolean;
 }) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
-
+  const [layoutForMainBanner, setLayoutForMainBanner] = useState("desktop");
   const textLevel =
     "Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.";
   const columnLevelData = [
@@ -25,22 +26,23 @@ export default function TestContainer({
     { level: "C2", text: textLevel },
   ];
 
-  return (
-    <div
-      className="home-test-container-with-footer"
-      style={{ backgroundImage: footer ? `url(${backImg})` : "none" }}
-    >
-      <div
-        className="home-test-container"
-        style={{
-          backgroundImage: backIsImg === false ? "none" : `url(${backImg})`,
-        }}
-      >
-        <div className="home-test-container-left">
-          <div className="home-test-container-left-title">
-            не знаєш який курс тобі потрібен?
-          </div>
-          <div className="home-test-container-left-p">
+   useEffect(() => {
+      const updateLayout = () => {
+        if (window.innerWidth < 768) {
+          setLayoutForMainBanner("mobile");
+        } else {
+          setLayoutForMainBanner("desktop");
+        }
+      };
+  
+      window.addEventListener("resize", updateLayout);
+      return () => window.removeEventListener("resize", updateLayout);
+    }, [window.innerWidth]);
+
+    let textP;
+  if (layoutForMainBanner === "desktop") {
+    textP = (
+      <div className="home-test-container-left-p">
             Пройди наш{" "}
             <HighlightedTextWithDots
               colorText="#ffffff"
@@ -65,7 +67,44 @@ export default function TestContainer({
             та дізнайся <br />
             який курс буде кращим рішенням для тебе
           </div>
-          <button className="home-test-container-left-btn">пройти тест</button>
+    )
+  } else{
+    textP = (
+      <div className="home-test-container-left-p">
+            Пройди наш{" "}
+            <HighlightedText
+              colorBack="#AE88AD"
+            >
+              безкоштовний тест на
+            </HighlightedText>{" "}
+            <HighlightedText
+              colorBack="#AE88AD"
+            >
+              рівень англійської мови
+            </HighlightedText>{" "}
+            та дізнайся 
+            який курс буде кращим рішенням для тебе
+          </div>
+    )
+  }
+
+  return (
+    <div
+      className="home-test-container-with-footer"
+      style={{ backgroundImage: footer ? `url(${backImg})` : "none" }}
+    >
+      <div
+        className="home-test-container"
+        style={{
+          backgroundImage: backIsImg === false ? "none" : (layoutForMainBanner === "desktop" ? `url(${backImg})`: `url('src/assets/background/backForTestMobile.png')`),
+        }}
+      >
+        <div className="home-test-container-left">
+          <div className="home-test-container-left-title">
+            не знаєш який курс тобі потрібен?
+          </div>
+          {textP}
+          {layoutForMainBanner ==="desktop" ? <button className="home-test-container-left-btn">пройти тест</button> : null}
         </div>
 
         <div className="home-test-container-right">
@@ -88,6 +127,7 @@ export default function TestContainer({
             ))}
           </div>
         </div>
+        {layoutForMainBanner ==="mobile" ? <button className="home-test-container-left-btn">пройти тест</button> : null}
       </div>
       {footer ? <div style={{ marginTop: 40 }}>{footer}</div> : null}
     </div>

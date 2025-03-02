@@ -1,8 +1,9 @@
 .home-learning-benefits-container{
     width: 100%;
-    height: 820px;
+    /* height: 820px; */
+    height: auto;
     background-color: #ffffff;
-    padding: 80px 200px 0 200px;
+    padding: 80px 180px;
     
 }
 .home-learning-benefits-title{
@@ -20,5 +21,22 @@
     display: flex;
     justify-content: center;
     align-items: start;
+    flex-wrap: wrap;
     gap: 15px;
+}
+@media (max-width: 768px) {
+    .home-learning-benefits-container{
+        padding: 80px 20px;
+        height: auto;
+    }
+    .home-learning-benefits-title{
+        font-size: 30px;
+        line-height: normal;
+        width: 100%;
+    }
+    .home-learning-benefits-boxes-container{
+        /* flex-direction: column; */
+        align-items: center;
+        gap: 20px;
+    }
 }

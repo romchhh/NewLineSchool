@@ -1,16 +1,17 @@
 .home-main-banner-container{
     font-family: Unbounded;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
     gap: 20px;
-    margin: 70px 175px 40px 200px;
+    margin: 50px 175px 40px 200px;
     position: relative;
 }
 .home-main-banner-img {
-    display: flex;
-    align-self: flex-end;
+    position: absolute;
+    top: 35px;
+    right: 0;
     width: 650px;
     height: 380px;
     overflow: hidden; 
@@ -47,13 +48,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
 }
 .home-main-banner-title{
     font-weight: 800;
     font-size: 80px;
     line-height: 90px;
     color: #FFFFFF;
-
+    z-index: 1;
+    margin-bottom: 60px;
 }
 .home-main-banner-title-text-p1{
     display: flex;
@@ -96,9 +99,57 @@
     line-height: 22px;
     color: #484848;
     text-transform: uppercase;
+    z-index: 1;
 }
 .home-main-banner-p span{
     background-color: #FCE696;
     padding: 4px 6px 1px 3px;
     border-radius: 19px;
+}
+@media (max-width: 768px) {
+    .home-main-banner-container{
+        justify-content: flex-start;
+        height: 600px;
+        margin: 20px;
+        margin-top: 40px;
+    }
+    .home-main-banner-title{
+        font-size:35px;
+        line-height: 40px;
+        margin: 0;
+    }
+    .home-main-banner-title-text-p1{
+        gap: 10px;
+    }
+    .home-main-banner-title-text-p1 div{
+        width: 90px;
+        height: 35px;
+    }
+    .home-main-banner-title-text-p2{
+        gap: 10px;
+    }
+    .home-main-banner-title-text-p2 span{
+        width: 90px;
+        height: 35px;
+        font-size: 30px;
+        padding-top: 10px;
+        letter-spacing: -2px;
+    }
+    .home-main-banner-img{
+        width: 100%;
+        height: 225px;
+        position: static;
+        margin-bottom: 15px;
+    }
+    .home-main-banner-p{
+        width: 100%;
+        height: auto;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .home-main-banner-btn{
+        height: 45px;
+        width: 200px;
+        /* margin-top: 10px; */
+    }
 }

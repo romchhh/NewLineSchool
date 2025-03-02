@@ -1,0 +1,38 @@
+.styled-mobile-container-link{
+    background-image: url("src/assets/elements/mobile_container_link.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 135px;
+    height: 100%;
+    padding: 10px;
+    position: relative;
+}
+.styled-mobile-container-link-text{
+    font-family: Steppe;
+    font-weight: 600;
+    line-height: 20px;
+    font-size: 12px;
+    color: #ffffff;
+    text-transform: uppercase;
+    /* margin-left: 10px; */
+}
+.styled-mobile-container-link-button{
+    position: absolute;
+    right: -12px;
+    bottom: -7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    width: 36px;
+    gap: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #AE88AD;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.styled-mobile-container-link-button img{
+    width: 20px;
+    height: auto;
+}

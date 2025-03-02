@@ -40,7 +40,7 @@ export default function ReviewsContainer() {
     const scroll = (direction: "left" | "right") => {
         if (containerRef.current && !isScrolling) {
           setIsScrolling(true);
-          const scrollAmount = 300;
+          const scrollAmount = 325;
           const newScrollLeft =
             containerRef.current.scrollLeft + (direction === "left" ? -scrollAmount : scrollAmount);
     

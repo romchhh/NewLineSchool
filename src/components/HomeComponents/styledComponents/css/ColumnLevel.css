@@ -23,11 +23,16 @@
     background-color: #FDECB0;
     box-shadow: 0 0 10px 0 #ECC847;
   }
+  .column-level-container.mobile{
+    width: 30px;
+    /* max-width: 100%; */
+  }
   
   .column-level-arrow {
     position: absolute;
-    left: 20px;
-    width: 60px;
+    /* left: 20px; */
+    pointer-events: none;
+    width: 50px;
   }
   
   .column-level-arrow img {
@@ -64,7 +69,14 @@
     font-weight: 700;
     color: #484848;
   }
-  
+  @media (max-width: 768px) {
+    .column-level-container-active-box.mobile {
+      right: -150px;
+    }
+    .column-level-container-active-box.mobile img.active-box-bg{
+      transform: scaleX(-1);
+    }
+  }
 
   
   

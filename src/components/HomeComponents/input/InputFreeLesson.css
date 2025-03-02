@@ -10,7 +10,19 @@
     color: #AE88AD;
     outline: none;
     padding: 4px 2px;
+    background: transparent;
+}
+.home-free-lessons-form-input.mobile{
+    color: black;
+    font-weight: 500;
+    padding-left: 15px;
+    padding-bottom: 0;
+}
+.home-free-lessons-form-input.mobile::placeholder{
+    text-transform: uppercase;
+    color: black;
 }
 .home-free-lessons-form-input::placeholder{
+    /* text-transform: uppercase; */
     color: #AE88AD;
 }

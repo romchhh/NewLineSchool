@@ -4,11 +4,13 @@ export default function InputFreeLessong({
   setInputValue,
   placeholder,
   type,
+  isMobile,
 }: {
   inputValue: string;
   setInputValue: (value: string) => void;
   placeholder: string;
   type: string;
+  isMobile: boolean;
 }) {
   const formatPhoneNumber = (value: string) => {
     const numbers = value.replace(/\D/g, "").replace(/^380/, "").slice(0, 10); 
@@ -51,10 +53,9 @@ export default function InputFreeLessong({
       setInputValue(formatPhoneNumber(cleaned)); 
     }
   };
-
   return (
     <input
-      className="home-free-lessons-form-input"
+      className={`home-free-lessons-form-input ${isMobile ? "mobile" : ""}`}
       type={type}
       value={inputValue}
       placeholder={placeholder}

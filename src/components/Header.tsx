@@ -1,9 +1,11 @@
-import { NavLink } from "react-router";
-import { useNavigate } from "react-router";
+import { useState, useEffect } from "react";
+import { NavLink, useNavigate } from "react-router";
 import "./css/Header.css";
 
 export default function Header({ isHomePage }: { isHomePage: boolean }) {
     const navigate = useNavigate();
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
     const headerLinks = [
         { name: "головна", path: "/" },
         { name: "для школярів", path: "/forSchoolchildren" },
@@ -13,29 +15,51 @@ export default function Header({ isHomePage }: { isHomePage: boolean }) {
         { name: "контакти", path: "/contacts" }
     ];
 
+    useEffect(() => {
+        const handleClickOutside = (event: MouseEvent) => {
+            const menu = document.querySelector(".header-links");
+            const hamburger = document.querySelector(".hamburger");
+            if (isMenuOpen && menu && !menu.contains(event.target as Node) && !hamburger?.contains(event.target as Node)) {
+                setIsMenuOpen(false);
+            }
+        };
+        if (isMenuOpen) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "auto";
+        }
+
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [isMenuOpen]);
+
     return (
         <div className={`header-container ${isHomePage ? "header-transparent" : ""}`}>
             <img
                 src="src/assets/logo.png"
-                alt=""
+                alt="Logo"
                 className="header-logo"
-                onClick={() => {
-                    navigate("/");
-                }}
+                onClick={() => navigate("/")}
             />
-            <div className="header-links">
+            
+            <div className="hamburger" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                <img src="src/assets/elements/menu.png" alt="Меню" />
+            </div>
+
+            <div className={`header-links ${isMenuOpen ? "open" : ""}`}>
                 {headerLinks.map((link, index) => (
-                    <NavLink
-                        key={index}
-                        to={link.path}
-                        style={({ isActive }) => ({
-                            color: isActive ? "#AE88AD" : "#000000"
-                        })}
+                    <NavLink 
+                        key={index} 
+                        to={link.path} 
+                        onClick={() => setIsMenuOpen(false)} 
                     >
                         {link.name}
                     </NavLink>
                 ))}
             </div>
+
             <div className="header-btn">ЗАПИСАТИСЯ</div>
         </div>
     );

@@ -115,3 +115,82 @@
     padding-left: 5px;
     line-height: 25px;
 }
+.home-for-us-important-text-container-mobile{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    margin-top: 10px;
+}
+.home-for-us-important-text-container-mobile-title{
+    position: relative;
+        font-family: Steppe;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #414040;
+
+}
+.home-for-us-important-text-container-mobile-img{
+    position: sticky;
+    right: 70px;
+    bottom: 5px;
+    width: 40px;
+}
+@media (max-width: 768px) {
+    .home-for-us-important-container{
+        height: auto;
+        clip-path: ellipse(175% 100% at center bottom);
+        /* padding-top: 200px; */
+        justify-content: flex-start;
+        padding: 60px 15px 0 15px;
+    }
+    .home-for-us-important-title-container{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .home-for-us-important-title-subtitles-container{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .home-for-us-important-title{
+        font-size: 22px;
+        color: #414040;
+        line-height:normal;
+    }
+    .home-for-us-important-title-subtitle{
+        font-size: 16px;
+        font-weight: 800;
+        padding: 8px 10px 6px 10px;
+        border-width: 2px;
+        border-radius: 9px;
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .home-for-us-important-title-subtitle.p1{
+        color: #F7CD38;
+        background-color: #F7DC7C33;
+    }
+    .home-for-us-important-title-subtitle.p2{
+        background-color: #AE88AD33;
+    }
+    .home-for-us-important-title-subtitle.p3{
+        background-color: #A0BFBD33;
+        color: #7BAEAC;
+    }
+    .home-for-us-important-img{
+        margin: 0;
+        width: 100%;
+        height: 300px; 
+    }
+    .home-for-us-important-content{
+        flex-direction: column;
+        gap: 20px;
+        padding: 0;
+    }
+    .home-for-us-important-text-container{
+        margin-right: 0;
+    }
+}

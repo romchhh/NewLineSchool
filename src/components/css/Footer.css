@@ -94,3 +94,19 @@
     gap: 15px;
     padding-right: 50px;
  }
+ @media (max-width: 768px) {
+    .footer-container{
+        padding: 0;
+    }
+    .footer-info{
+        flex-direction: column;
+        padding: 0 20px;
+        gap: 30px;
+    }
+    .footer-info-adress{
+        gap: 5px;
+    }
+    .footer-info-contacts{
+        gap: 5px;
+    }
+ }

@@ -41,3 +41,19 @@
     justify-content: center;
     align-items: center;
 }
+@media (max-width: 768px) {
+    .home-reviews-box{
+        width: 250px;
+        height: 350px;
+        margin-bottom: 20px;
+    }
+    .home-reviews-box-header{
+        padding: 12px 15px 12px 15px;
+    }
+    .home-reviews-box-body{
+        padding: 10px 15px;
+        margin: 0;
+        font-size: 11px;
+        line-height: 15px;
+    }
+}
