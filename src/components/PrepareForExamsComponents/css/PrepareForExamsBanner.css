@@ -21,7 +21,6 @@
     padding: 0px 10px;
 }
 .prepare-for-exams-banner-left{
-    /* flex: 2; */
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -94,10 +93,81 @@
 }
 .prepare-for-exams-banner-right{
     overflow: hidden;
-    flex: 2;
+    /* flex: 2; */
+    width: 325px;
 }
 .prepare-for-exams-banner-right img{
     border-radius: 25px;
     width: 100%;
     height: 100%;
+}
+@media (max-width: 768px) {
+    .prepare-for-exams-banner{
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+        padding: 0;
+        gap: 20px;
+        padding: 40px 10px 0px 10px;
+    }
+    .prepare-for-exams-banner-title{
+        position: static;
+        font-size: 25px;
+        line-height: 40px;
+        padding: 0;
+        padding-left: 15px;
+        width: 100%;
+        order: 1;
+    }
+    .prepare-for-exams-banner-left{
+        width: 100%;
+        order: 2;
+        padding: 0 5px;
+    }
+    .pepare-for-exams-banner-left-upper{
+        padding: 0;
+        width: 100%;
+        padding: 0 10px;
+        font-size: 15px;
+        line-height: normal;
+    }
+    .pepare-for-exams-banner-left-lower{
+        padding: 10px;
+        width: 100%;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .prepare-for-exams-combine-mobile{
+        order: 2;
+        display: flex;
+    }
+    .prepare-for-exams-banner-right{
+        flex: none;
+        order: 1;
+        padding: 0 5px;
+        height: 200px;
+        width: 135px;
+    }
+    .prepare-for-exams-banner-mid{
+        order: 2;
+        padding: 0 10px;
+        width: 100%;
+        margin: 0;
+        gap: 5px;
+    }
+    .prepare-for-exams-banner-mid-title{
+        /* width: 100%; */
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .prepare-for-exams-banner-mid-body{
+        gap: 6px;
+    }
+    .prepare-for-exams-banner-mid-body-item-img{
+        width: 15px;
+        height: 10px;
+    }
+    .prepare-for-exams-banner-mid-body-item-text{
+        font-size: 12px;
+    }
 }

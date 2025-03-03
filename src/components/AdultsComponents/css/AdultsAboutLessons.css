@@ -74,3 +74,44 @@
     color: #AE88AD;
 
 }
+@media (max-width: 768px) {
+    .for-adults-about-lessons-container{
+        height: auto;
+        padding: 0;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 20px 40px 20px;
+    }
+    .for-adults-about-lessons-info-left{
+        width: 100%;
+        margin-right: 0;
+        padding: 0;
+    }
+    .for-adults-about-lessons-info-right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-width: 100%;
+        margin-right: 0;
+        flex: none;
+        margin: 0;
+        padding: 0;
+    }
+    .for-adults-about-lessons-info-left-title-con{
+        margin-bottom: 15px;
+        padding: 0 10px;
+    }
+    .for-adults-about-lessons-info-left-body{
+        border: 2px solid #AE88AD;
+        padding-right: 0;
+        padding: 12px;
+        border-radius: 15px;
+        gap: 5px;
+    }
+    .for-adults-about-lessons-info-left-body-p{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: normal;
+    }
+}

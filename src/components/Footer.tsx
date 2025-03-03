@@ -14,7 +14,7 @@ export default function Footer({background}: {background: boolean}) {
         window.addEventListener("resize", updateLayout);
         return () => window.removeEventListener("resize", updateLayout);
       }, [window.innerWidth]);
-    return <div className="footer-container" style={{backgroundImage: background ? "url('src/assets/background/back-footer.png')": "none", paddingTop: background ? 80 : 0, height: background ? (layoutForMainBanner === "desktop" ? 400: 600): 350}}>
+    return <div className="footer-container" style={{backgroundImage: background ? "url('src/assets/background/back-footer.png')": "none", paddingTop: background ? 80 : 0, height: background ? (layoutForMainBanner !== "mobile" ? 400: "auto"):(layoutForMainBanner !== "mobile" ? 350: "auto")}}>
         <div className="footer-info">
             <div className="footer-info-adress-container">
                 <div className="footer-info-adress">
