@@ -56,6 +56,9 @@
     text-decoration: none;
     text-transform: uppercase;
 }
+.header-links a.active{
+    color: #AE88AD;
+}
 
 
 .hamburger {

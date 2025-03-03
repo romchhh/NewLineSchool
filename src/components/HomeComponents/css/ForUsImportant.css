@@ -2,7 +2,7 @@
     position: relative;
 }
 .home-for-us-important-container{
-    height: 625px;
+    height: 650px;
     width: 100%;
     background-color: #FFFFFF;
     clip-path: ellipse(90% 100% at center bottom);
@@ -93,7 +93,7 @@
     display: flex;   
     gap: 50px;
     width: 100%;
-    padding: 0 200px;
+    padding: 0 235px;
 }
 .home-for-us-important-img{
     flex: 1;
@@ -111,7 +111,7 @@
     margin-right: 65px;
 }
 .home-for-us-important-text{
-    font-size: 17px;
+    font-size: 18px;
     padding-left: 5px;
     line-height: 25px;
 }
@@ -138,6 +138,9 @@
     width: 40px;
 }
 @media (max-width: 768px) {
+    .scroll-to-see-more{
+        display: none;
+    }
     .home-for-us-important-container{
         height: auto;
         clip-path: ellipse(175% 100% at center bottom);

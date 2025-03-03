@@ -15,7 +15,7 @@
 .for-adults-banner-title{
     font-family: Unbounded;
     font-weight: bold;
-    font-size: 65px;
+    font-size: 70px;
     line-height: 70px;
     color: #484848;
     text-transform: uppercase;
@@ -25,7 +25,7 @@
     color: #AE88AD;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 32px;
     line-height: 35px;
     margin-top: 10px;
 }
@@ -36,7 +36,7 @@
 .for-adults-banner-text-title{
     font-family: SteppeBold;
     /* font-weight: 800; */
-    font-size: 24px;
+    font-size: 26px;
     line-height: 30px;
     color: #484848;
 }
@@ -44,7 +44,7 @@
     width: 60%;
     font-family: Steppe;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 20px;
     color: #484848;
     margin-top: 5px;

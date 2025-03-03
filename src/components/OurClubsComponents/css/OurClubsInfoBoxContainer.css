@@ -11,7 +11,7 @@
 .club-info-box-title{
     font-family: Unbounded;
     font-weight: 800;
-    font-size: 35px;
+    font-size: 38px;
     line-height: 45px;
     letter-spacing: 0%;
     padding: 0 20px;
@@ -26,19 +26,19 @@
     font-size: 24px;
     line-height: 30px;
     color: #484848;
-    padding: 10px 20px;
+    padding: 10px 25px;
     text-transform: uppercase;
 }   
 .club-info-box-body{
     display: flex;
-    gap: 60px;
+    gap: 150px;
     padding: 20px 120px;
 }
 .club-info-box-body-type1-left{
     /* flex: 1; */
     font-family: Unbounded;
     font-weight: 500;
-    font-size: 19px;
+    font-size: 20px;
     line-height: 24px;
     color: #AE88AD;
     text-transform: uppercase;
@@ -62,7 +62,7 @@
     gap: 10px;
     font-family: Unbounded;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
     color: #484848;
 }
@@ -80,7 +80,7 @@
 .club-info-box-body-type2-left{
     font-family: Unbounded;
     font-weight: 500;
-    font-size: 19px;
+    font-size: 20px;
     line-height: 24px;
     color: #484848;
     text-transform: uppercase;
@@ -100,7 +100,7 @@
 .club-info-box-body-type2-right-upper, .club-info-box-body-type2-right-lower{
     font-family: Steppe;
     font-weight: 600;
-    font-size: 17px;
+    font-size: 18px;
     line-height: 26px;
     color: #484848;
 }
@@ -113,7 +113,7 @@
 .club-info-box-body-type3-left-upper{
     font-family: Unbounded;
     font-weight: 500;
-    font-size: 19px;
+    font-size: 20px;
     line-height: 24px;
     color: #484848;
     text-transform: uppercase;
@@ -124,7 +124,7 @@
 .club-info-box-body-type3-left-lower{
     font-family: Steppe;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 24px;
     color: #484848;
     padding-left: 40px;
@@ -138,11 +138,11 @@
 .club-info-box-body-type3-right-title{
     font-family: Unbounded;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 26px;
     color: #AE88AD;
     text-transform: uppercase;
-    padding-left: 40px;
+    padding-left: 20px;
 }
 .club-info-box-body-type3-right-body{
     display: flex;
@@ -169,9 +169,9 @@
 .club-info-box-body-type3-right-footer{
     font-family: Unbounded;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
-    padding-left: 40px;
+    padding-left: 20px;
     color: #484848;
 }
 .club-info-box-body-type3-right-footer span{
@@ -203,11 +203,11 @@
 .club-info-box-body-type4-left-upper{
     font-family: Unbounded;
     font-weight: 500;
-    font-size: 19px;
+    font-size: 20px;
     line-height: 24px;
     color: #484848;
     text-transform: uppercase;
-    width: 450px;
+    width: 500px;
     padding: 20px 10px 0 10px;
     text-indent: 30px;
     color: #AE88AD;
@@ -261,11 +261,11 @@
 .club-info-box-body-type4-right-body-title{
     font-family: Unbounded;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 26px;
     color: #AE88AD;
     text-transform: uppercase;
-    padding-left: 40px;
+    padding-left: 30px;
 }
 .club-info-box-body-type4-right-body-text{
     display: flex;
@@ -277,7 +277,7 @@
     gap: 20px;
     font-family: Unbounded;
     font-weight: 600;
-    font-size: 17px;
+    font-size: 18px;
     line-height: 20px;
     color: #484848;
 }

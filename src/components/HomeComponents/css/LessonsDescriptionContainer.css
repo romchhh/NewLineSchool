@@ -12,19 +12,19 @@
 .home-lessons-description-title{
     font-family: Unbounded;
     font-weight: 600;
-    font-size: 48px;
+    font-size: 52px;
     line-height: 82.8px;
     text-transform: uppercase;
     color: #AE88AD;
 }
 .home-lessons-description-content{
     display: flex;
-    gap: 30px;
+    /* gap: 30px; */
     height: 500px;
 }
 .home-lessons-description-img{
-    width: 450px;
-    height: 250px;
+    width: 500px;
+    height: 275px;
     border-radius: 6px;
     overflow: hidden;
 }
@@ -52,7 +52,7 @@
     margin-right: 5px;
     font-family: Unbounded;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 36px;
     line-height: 48.3px;
     letter-spacing: 0%;
     color: #ffffff;

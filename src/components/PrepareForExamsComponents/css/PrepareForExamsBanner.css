@@ -5,7 +5,7 @@
     background-color: #ffffff;
     display: flex;
     align-items: flex-end;
-    padding: 30px 100px 50px 50px;
+    padding: 30px 50px 50px 50px;
     gap: 80px;
 }
 .prepare-for-exams-banner-title{
@@ -14,8 +14,8 @@
     left: 40px;
     font-family: Unbounded;
     font-weight: 800;
-    font-size: 65px;
-    line-height: 80px;
+    font-size: 70px;
+    line-height: 85px;
     text-transform: uppercase;
     color: #484848;
     padding: 0px 10px;
@@ -24,12 +24,12 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 350px;
+    width: 400px;
 }
 .pepare-for-exams-banner-left-upper{
     font-family: SteppeBold;
     font-weight: 600;
-    font-size: 17px;
+    font-size: 18px;
     line-height: 22px;
     color: #484848;
     padding-left: 20px;
@@ -40,7 +40,7 @@
 .pepare-for-exams-banner-left-lower{
     font-family: Unbounded;
     font-weight: 600;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 20px;
     padding: 15px 18px;
     color: #484848;
@@ -58,11 +58,12 @@
     flex-direction: column;
     gap: 20px;
     padding: 20px;
+    margin-right: 50px;
 }
 .prepare-for-exams-banner-mid-title{
     font-family: Unbounded;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 30px;
     color: #AE88AD;
     text-transform: uppercase;
@@ -77,7 +78,7 @@
     gap: 10px;
     font-family: Steppe;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 17px;
     color: #484848;
 }
 .prepare-for-exams-banner-mid-body-item-img{

@@ -101,12 +101,10 @@ export default function ForUsImportant() {
   }
   return (
     <div className="home-for-us-important-main-container">
-      {layoutForMainBanner === "deskrop" ? (
-        <div className="scroll-to-see-more">
+      <div className="scroll-to-see-more">
           SCROLL TO SEE MORE
           <img src="src/assets/elements/arrow_bottom.png" alt="" />
         </div>
-      ) : null}
       <div className="home-for-us-important-container">
         <div className="home-for-us-important-title-container">
           <div className="home-for-us-important-title">ДЛЯ НАС ВАЖЛИВО</div>

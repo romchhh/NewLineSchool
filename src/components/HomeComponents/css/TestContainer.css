@@ -9,8 +9,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    padding: 120px 220px 100px 200px;
+    gap: 40px;
+    padding: 120px 300px 100px 250px;
 }
 .home-test-container-left{
     flex: 3;

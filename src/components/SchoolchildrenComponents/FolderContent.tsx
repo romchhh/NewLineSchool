@@ -141,7 +141,7 @@ export default function FolderContent({
       <div
         className="expanded-folder-content"
         style={{
-          paddingLeft: type === "expanded" ? 105 : 105,
+          paddingLeft: 190,
           paddingRight: type === "expanded" ? 105 : 80,
         }}
       >
