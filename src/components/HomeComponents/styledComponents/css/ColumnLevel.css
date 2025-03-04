@@ -48,7 +48,7 @@
     justify-content: center;
     align-items: center;
     pointer-events: none; 
-    filter: drop-shadow(0 3px 5px rgb(72, 72, 72, 0.5));
+    /* filter: drop-shadow(0 3px 5px rgb(72, 72, 72, 0.5)); */
 }
 
 .column-level-container-active-box img.active-box-bg {
@@ -59,11 +59,12 @@
   }
   
   .active-box-text {
+    font-family: Steppe;
     position: absolute;
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 90%;
     text-align: start;
     font-size: 14px;
     font-weight: 700;
