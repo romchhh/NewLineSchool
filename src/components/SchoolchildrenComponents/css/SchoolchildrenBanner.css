@@ -64,3 +64,37 @@
     object-fit: cover;
     border-radius: 13.6px;
 }
+@media (max-width: 768px) {
+    .schoolchildren-banner-container{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 25px;
+    }
+    .schoolchildren-banner-content{
+        padding: 0;
+        gap: 15px;
+    }
+    .schoolchildren-banner-content-text-header{
+        font-size: 30px;
+        line-height: normal;
+    }
+    .schoolchildren-banner-content-text-links{
+        width: 100%;
+        gap: 10px;
+        padding: 0;
+    }
+    .schoolchildren-banner-content-text-link{
+        font-size: 16px;
+        line-height: normal;
+    }
+    .schoolchildren-banner-right{
+        gap: 15px;
+        width: 100%;
+    }
+    .schoolchildren-banner-right-img{
+        height: 250px;
+        width: 100%;
+    }
+}

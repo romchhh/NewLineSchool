@@ -109,4 +109,7 @@
     .footer-info-contacts{
         gap: 5px;
     }
+    .footer-info-contacts-container{
+        padding: 0;
+    }
  }

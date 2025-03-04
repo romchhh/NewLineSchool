@@ -71,15 +71,17 @@ export default function ContainerAboutLessons({
           </div>
         </div>
       </div>
-      <div
-        className="container-about-lessons-btn"
-        onClick={() => {}}
-        style={{
-          width: isMobile ? 130 : btnWidth,
-          height: isMobile ? 30 : btnHeight,
-        }}
-      >
-        Записатися
+      <div className="container-about-lessons-btn-container">
+        <button
+          style={{
+            width: isMobile ? 130 : btnWidth,
+            height: isMobile ? 30 : btnHeight,
+          }}
+          className="container-about-lessons-btn"
+          onClick={() => {}}
+        >
+          ЗАПИСАТИСЯ
+        </button>
       </div>
     </div>
   );

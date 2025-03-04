@@ -22,6 +22,7 @@ export default function OurClubs() {
             subtitle:<>Граматичний клуб <br /> для підлітків</>
         }
     ];
+    
     return <div className="our-clubs-container">
         <OurClubsBanner />
         <OurClubsInfoHeader />

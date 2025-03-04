@@ -1,17 +1,12 @@
 .expanded-folder-content-container {
-    /* background-image: url("src/assets/elements/folderElement1.png"); */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    height: auto;
-    /* min-height: 830px; */
     display: flex;
     justify-content: start;
     align-items: start;
-    /* margin: 60px 0 140px 0; */
     position: relative;
-    /* overflow-x: auto; */
 }
 .expanded-folder-content{
     display: flex;
@@ -203,3 +198,140 @@
     flex: 6;
     /* background-color: black; */
 } 
+@media (max-width: 768px) {
+    .expanded-folder-content-container{
+        width: 350px;
+        max-width: 350px;
+        min-width: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .expanded-folder-content{
+        height: auto;
+        padding-right: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .expanded-folder-content-title{
+        font-size: 18px;
+        line-height: normal;
+        width: 200px;
+        /* text-align: start; */
+        align-content: flex-start;
+        margin: 10px 100px 20px 0;
+    }
+    .expanded-folder-content-body{
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+    .expanded-folder-content-body-left{
+        width: 100%;
+        gap: 15px;
+    }
+    .expanded-folder-content-body-left-upper-part-container{
+        flex: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* align-content: center; */
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+    .expanded-folder-content-body-left-upper-part1{
+        background-image: url("src/assets/elements/containerLeftUpCorenerMobile.png");
+        flex: none;
+        width: 310px;
+        height: 260px;
+        padding: 25px;
+    }
+    .body-left-upper-part1-title, .body-left-upper-part2-title{
+        font-size: 16px;
+    }
+    .body-left-upper-part1-text, .body-left-upper-part2-text{
+        font-size: 14px;
+        line-height: normal;
+    }
+    .expanded-folder-content-body-left-upper-part2{
+        flex: none;
+        width: 300px;
+        height: 250px;
+        padding: 25px 20px;
+    }
+    .expanded-folder-content-body-left-lower-part-container{
+        flex: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 295px;
+        margin-left: 8px;
+        padding-top: 5px;
+        height: auto;
+        flex-direction: column;
+    }
+    .body-left-lower-part-title{
+        font-size: 16px;
+    }
+    .lower-part-text-item{
+        gap: 10px;
+        font-size: 13px;
+        padding: 0;
+    }
+    .expanded-folder-content-extra-container{
+        width: 260px;
+        left: 10px;
+        padding: 10px;
+        line-height: normal;
+        border-radius: 20px;
+        height: auto;
+        font-size: 13px;
+    }
+    .expanded-folder-content-body-right{
+        flex: none;
+        width: 300px;
+        margin-left: 5px;
+    }
+    .folder-content-body{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        gap: 15px;
+        margin-top: 20px;
+    }
+    .folder-content-body-info-container{
+        padding: 15px 0 10px 10px;
+        width: 300px;
+        gap: 5px;
+    }
+    .folder-content-body-info-container-title{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .folder-content-body-info-container-text{
+        width: 100%;
+        font-size: 13px;
+        line-height: 19px;
+    }
+    .folder-content-body-info-container-text.p1{
+        font-size: 14px;
+        width: 250px;
+    }
+    .folder-content-body-img{
+        flex: none;
+        width: 300px;
+        height: 300px;
+
+    }
+    .folder-content-body-img img{
+        object-position: top;
+    }
+    .folder-content-body-info-studying{
+        margin: 0;
+    }
+}

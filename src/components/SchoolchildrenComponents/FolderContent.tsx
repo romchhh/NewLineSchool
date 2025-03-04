@@ -1,6 +1,7 @@
 import "./css/FolderContent.css";
 import { ReactNode } from "react";
 import ContainerAboutLessons from "./ContainerAboutLessons";
+import { useEffect, useState } from "react";
 interface FolderContentProps {
   backgroundImg: string;
   title: ReactNode;
@@ -15,6 +16,7 @@ interface FolderContentProps {
   type: string;
   bodyCenterElements: ReactNode[];
   bodyBottomElements: ReactNode[];
+  subtype?: string;
 }
 
 export default function FolderContent({
@@ -31,8 +33,10 @@ export default function FolderContent({
   type,
   bodyCenterElements,
   bodyBottomElements,
+  subtype
 }: FolderContentProps) {
-
+  const [layoutForFolder, setLayoutForFolder] = useState("desktop");
+  const isMobile = layoutForFolder === "mobile";
   let body;
   if (type === "expanded") {
     body = (
@@ -128,21 +132,33 @@ export default function FolderContent({
       </div>
     );
   }
+  useEffect(() => {
+      const updateLayout = () => {
+        if (window.innerWidth < 768) {
+          setLayoutForFolder("mobile");
+        } else {
+          setLayoutForFolder("desktop");
+        }
+      };
+  
+      window.addEventListener("resize", updateLayout);
+      return () => window.removeEventListener("resize", updateLayout);
+    }, [window.innerWidth]);
   return (
     <div
       className="expanded-folder-content-container"
       style={{
         backgroundImage: `url(${backgroundImg})`,
-        minHeight: type === "expanded" ? 830 : 740,
-        marginTop: type === "expanded" ? 60 : 170,
-        marginBottom: type === "expanded" ? 140 : 50,
+        minHeight: type === "expanded" ? (isMobile ? (subtype === "expanded-0" ? 1775: 1830) :830) : (isMobile ? 1500 :740),
+        marginTop: type === "expanded" ? 60 : isMobile ? 70:170,
+        marginBottom: type === "expanded" ? (isMobile ? 60: 140) : 50,
       }}
     >
       <div
         className="expanded-folder-content"
         style={{
-          paddingLeft: 190,
-          paddingRight: type === "expanded" ? 105 : 80,
+          paddingLeft: isMobile ? 0 : 190,
+          paddingRight: isMobile ? 0 : type === "expanded" ? 105 : 80,
         }}
       >
         <div className="expanded-folder-content-title">{title}</div>
@@ -151,7 +167,7 @@ export default function FolderContent({
       {type === "expanded" ? (
         <div
           className="expanded-folder-content-extra-container"
-          style={{ bottom: bottomExtraCon }}
+          style={{ bottom: subtype === "expanded-1"? -100 :bottomExtraCon }}
         >
           “В кінці курсу наші студенти зможуть підтвердити свої знання на
           Міжнародних іспитах Кембриджа для дітей (Young Learners): Starters,

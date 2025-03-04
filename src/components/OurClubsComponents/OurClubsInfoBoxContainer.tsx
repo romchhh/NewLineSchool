@@ -1,6 +1,8 @@
 import { ReactNode } from "react";
 import "./css/OurClubsInfoBoxContainer.css";
 import HighlightedTextWithDots from "../HomeComponents/styledComponents/HighlightedTextWithDots";
+import { useEffect, useState } from "react";
+import HighlightedText from "../HomeComponents/styledComponents/HighlightedText";
 export default function OurClubsInfoBoxContainer({
   title,
   subtitle,
@@ -10,6 +12,8 @@ export default function OurClubsInfoBoxContainer({
   subtitle: ReactNode;
   type: string;
 }) {
+  const [layoutForExams, setLayoutForExams] = useState("desktop");
+  const isMobile = layoutForExams === "mobile";
   let body;
   if (type === "type1") {
     const type1TextRight = [
@@ -23,7 +27,7 @@ export default function OurClubsInfoBoxContainer({
         <div className="club-info-box-body-type1-left">
           Підлітковий вік - це саме той період коли хочеться виговоритись або
           слухати як говорять інші.
-          <br />
+          {isMobile ? " " : <br />}
           <span>“Let’s talk about it”</span> чудовий розмовний клуб, де із
           задоволенням можна:
         </div>
@@ -52,7 +56,7 @@ export default function OurClubsInfoBoxContainer({
           <div className="club-info-box-body-type2-right-upper">
             Тому оригінальність нашого арт-крафт  клубу <br /> “Cut and Talk”
             полягає в тому, що вміння <br />
-            <HighlightedTextWithDots
+            {isMobile?<HighlightedText colorBack="#BFA0BEB2">творити можно поєднати з навчанням вміти говорити</HighlightedText> :<HighlightedTextWithDots
               colorBackground="#BFA0BEB2"
               colorDots="#AE88AD"
               colorText="#414040"
@@ -60,13 +64,13 @@ export default function OurClubsInfoBoxContainer({
               widthBorder={1}
             >
               творити можно поєднати з навчанням вміти говорити
-            </HighlightedTextWithDots>
+            </HighlightedTextWithDots>}
           </div>
           <div className="club-info-box-body-type2-right-lower">
             Тут можна ліпити, малювати, вирізати, клеїти,
-            <br /> створювати  різні шедеври своїми руками та
-            <br /> відточувати майстерність говорити англійською
-            <br /> мовою одночасно.
+            {isMobile? "" :<br />} створювати  різні шедеври своїми руками та
+            {isMobile? "" :<br />} відточувати майстерність говорити англійською
+            {isMobile? "" :<br />} мовою одночасно.
           </div>
         </div>
       </>
@@ -114,7 +118,7 @@ export default function OurClubsInfoBoxContainer({
           </div>
           <div className="club-info-box-body-type3-right-footer">
             <span>А також</span>, вдосконалення навичок
-            <br /> говоріння, вимови та сприйняття на слух
+            {isMobile? "" :<br />} говоріння, вимови та сприйняття на слух
           </div>
         </div>
       </>
@@ -150,7 +154,7 @@ export default function OurClubsInfoBoxContainer({
               граматики у школі”
             </div>
             <div className="club-info-box-body-type4-right-title-lower">
-              Так говорять наші студенти-підлітки, коли <br />приходять до нас
+              Так говорять наші студенти-підлітки, коли {isMobile? "" :<br />}приходять до нас
             </div>
           </div>
           <div className="club-info-box-body-type4-right-body">
@@ -179,10 +183,24 @@ export default function OurClubsInfoBoxContainer({
       </>
     );
   }
+
+
+  useEffect(() => {
+      const updateLayout = () => {
+        if (window.innerWidth < 768) {
+          setLayoutForExams("mobile");
+        } else {
+          setLayoutForExams("desktop");
+        }
+      };
+  
+      window.addEventListener("resize", updateLayout);
+      return () => window.removeEventListener("resize", updateLayout);
+    }, [window.innerWidth]);
   return (
     <div
       className="club-info-box-container"
-      style={{ marginBottom: type === "type3" ? 40 : type === "type4" ? 275 : 0 }}
+      style={{ marginBottom: type === "type3" ? (isMobile? 0 :40) : type === "type4" ? (isMobile? 0 : 275) : 0 }}
     >
       <div className="club-info-box-title">{title}</div>
       <div className="club-info-box-subtitle">{subtitle}</div>

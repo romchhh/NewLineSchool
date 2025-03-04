@@ -94,3 +94,36 @@
 .clubs-info-header-body-text-item-text{
     flex: 1;
 }
+@media (max-width: 768px) {
+    .clubs-info-header-container{
+        padding: 20px 15px;
+        height: auto;
+        gap: 5px;
+    }
+    .clubs-info-header-title{
+        padding-left: 0;
+        padding: 10px 0;
+        font-size: 20px;
+
+    }
+    .clubs-info-header-body{
+        width: 100%;
+        padding: 15px;
+    }
+    .clubs-info-header-body-title{
+        font-size: 16px;
+        line-height: normal;
+    }
+    .clubs-info-header-body-subtitle{
+        font-size: 14px;
+        line-height: normal;
+    }
+    .clubs-info-header-body-info-item{
+        font-size: 16px;
+        line-height: normal;
+    }
+    .clubs-info-header-body-text-item{
+        font-size: 16px;
+        line-height: normal;
+    }
+}

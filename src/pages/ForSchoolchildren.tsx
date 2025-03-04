@@ -2,13 +2,16 @@ import "./css/ForSchoolchildren.css";
 import SchoolchildrenBanner from "../components/SchoolchildrenComponents/SchoolchildrenBanner";
 import FolderContent from "../components/SchoolchildrenComponents/FolderContent";
 import FreeLessonContainer from "../components/HomeComponents/FreeLessonContainer";
+import { useEffect, useState } from "react";
 export default function ForSchoolchildren() {
+  const [layoutForFolder, setLayoutForFolder] = useState("desktop");
+  const isMobile = layoutForFolder === "mobile";
   const folderData = [
     {
-      backgroundImg: "src/assets/elements/folderElement1.png",
+      backgroundImg: isMobile? "src/assets/elements/folderElement1Mobile.png" :"src/assets/elements/folderElement1.png",
       title: (
         <>
-          1 - англійська для <br /> <span>дітей (1-4 класи)</span>
+          1 - англійська для {isMobile? "":<br />} <span>дітей (1-4 класи)</span>
         </>
       ),
       bodyLeftUpperPart1Title: (
@@ -68,10 +71,10 @@ export default function ForSchoolchildren() {
       ],
     },
     {
-      backgroundImg: "src/assets/elements/folderElement2.png",
+      backgroundImg: isMobile?"src/assets/elements/folderElement2Mobile.png" : "src/assets/elements/folderElement2.png",
       title: (
         <>
-          2 - навчання для <br /> <span>підлітків (5-9 класи)</span>
+          2 - навчання для {isMobile? "":<br />} <span>підлітків (5-9 класи)</span>
         </>
       ),
       bodyLeftUpperPart1Title: (
@@ -145,9 +148,22 @@ export default function ForSchoolchildren() {
     <>Вартість індивідуального заняття: <span>від 750грн/60хв</span></>
   ];
 
+  useEffect(() => {
+    const updateLayout = () => {
+      if (window.innerWidth < 768) {
+        setLayoutForFolder("mobile");
+      } else {
+        setLayoutForFolder("desktop");
+      }
+    };
+
+    window.addEventListener("resize", updateLayout);
+    return () => window.removeEventListener("resize", updateLayout);
+  }, [window.innerWidth]);
   return (
     <div className="for-schoolchildren-container">
       <SchoolchildrenBanner />
+      <div className="folders-content-container">
       {folderData.map((data, index) => {
         return (
           <FolderContent
@@ -165,6 +181,7 @@ export default function ForSchoolchildren() {
             bodyCenterElements={data.bodyCenterElements}
             bodyBottomElements={data.bodyBottomElements}
             type="expanded"
+            subtype={`expanded-${index}`}
           />
         );
       })}
@@ -177,11 +194,12 @@ export default function ForSchoolchildren() {
             </span>
           </>
         }
-        backgroundImg="src/assets/elements/folderElement3.png"
+        backgroundImg={isMobile? "src/assets/elements/folderElement3Mobile.png": "src/assets/elements/folderElement3.png"}
         bodyCenterElements={bodyCenterElements}
         bodyBottomElements={bodyBottomElements}
         type="simple"
       />
+      </div>
       <FreeLessonContainer paddingTop={20}/>
     </div>
   );

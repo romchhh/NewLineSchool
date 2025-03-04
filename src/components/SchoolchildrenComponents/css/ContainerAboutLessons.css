@@ -95,8 +95,6 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-47%);
-    /* width: 200px;
-    height: 45px; */
     background-color: #AE88AD;
     border-radius: 25px;
     display: flex;
@@ -108,6 +106,7 @@
     color: #ffffff;
     text-transform: uppercase;
     cursor: pointer;
+    border: none;
 }
 @media (max-width: 768px) {
     .container-about-lessons{
@@ -116,6 +115,8 @@
         max-height: 535px;
         max-width: 300px;
         justify-content: flex-start;
+        align-items: center;
+        /* align-self: center; */
     }
     .container-about-lessons-title{
         font-size: 16px;
@@ -123,6 +124,9 @@
         margin-bottom: 15px;
     }
     .container-about-lessons-title-body-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         height: 450px;
         width: 270px;
     }
@@ -161,6 +165,14 @@
     .container-about-lessons-bottom-footer{
         font-size: 10px;
     }
+    .container-about-lessons-btn-container{
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* align-content: center; */
+        margin-left: 102px;
+    }
     .container-about-lessons-btn{
         margin-top: 30px;
         position: sticky;
@@ -168,10 +180,9 @@
         height: 45px;
         border-radius: 25px;
         font-size: 15px;
-        /* left: 175px; */
-        left: 49%;
-        /* transform: translateX(-50%); */
-        text-align: center;
+        /* left: 90%; */
+        /* text-align: center; */
+        /* align-content: center; */
         font-size: 12px;
     }
 }
