@@ -2,6 +2,7 @@ import "./css/TestsPage.css";
 import { useNavigate } from "react-router-dom";
 import {test_descriptions} from "../dicts/test";
 import { FaArrowLeft } from "react-icons/fa6";
+
 export default function TestsPage(){
     const navigate = useNavigate();
     const testTitles = [
@@ -43,7 +44,7 @@ export default function TestsPage(){
                         });
                     }}>
                         <div className="tests-page-container-body-test-text">{testTitle.title_elem}</div>
-                        <button className="tests-page-container-body-test-button"><img src="src/assets/elements/arrow_right_white.png" alt="" /></button>
+                        <button className="tests-page-container-body-test-button"><img src="/assets/elements/arrow_right_white.png" alt="" /></button>
                     </div>
                 })}
             </div>
