@@ -1,4 +1,4 @@
-import { createHashRouter, RouterProvider } from "react-router-dom"
+import { HashRouter, Routes, Route } from "react-router-dom"
 import Root from "./pages/Root"
 import Home from "./pages/Home"
 import ForSchoolchildren from "./pages/ForSchoolchildren"
@@ -7,48 +7,22 @@ import PrepareForExams from "./pages/PrepareForExams"
 import OurClubs from "./pages/OurClubs"
 import TestsPage from "./pages/TestsPage"
 import TestStartingPage from "./pages/TestStartingPage"
+
 export default function App(){
-  const router = createHashRouter([
-    {
-      path: "/",
-      element: <Root />,
-      children: [
-        {
-          index: true,
-          element: <Home />
-        },
-        {
-          path: "/forSchoolchildren",
-          element: <ForSchoolchildren />
-        },
-        {
-          path: "/forAdults",
-          element: <ForAdults />
-        },
-        {
-          path: "/prepareForExams",
-          element: <PrepareForExams />
-        },
-        {
-          path: "/ourClubs",
-          element: <OurClubs />
-        },
-        {
-          path: "/contacts",
-          element: <div>Contacts</div>
-        }
-      ]
-    },
-    {
-      path: "/tests",
-      element: <TestsPage />,
-    },
-    {
-      path: "/tests/:testId",
-      element: <TestStartingPage />
-    }
-  ])
-
-
-  return <RouterProvider router={router} />
+  return (
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<Root />}>
+          <Route index element={<Home />} />
+          <Route path="/forSchoolchildren" element={<ForSchoolchildren />} />
+          <Route path="/forAdults" element={<ForAdults />} />
+          <Route path="/prepareForExams" element={<PrepareForExams />} />
+          <Route path="/ourClubs" element={<OurClubs />} />
+          <Route path="/contacts" element={<div>Contacts</div>} />
+        </Route>
+        <Route path="/tests" element={<TestsPage />} />
+        <Route path="/tests/:testId" element={<TestStartingPage />} />
+      </Routes>
+    </HashRouter>
+  )
 }
