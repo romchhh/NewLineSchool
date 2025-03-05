@@ -2,6 +2,7 @@ import "./css/TestContainer.css";
 import HighlightedTextWithDots from "./styledComponents/HighlightedTextWithDots";
 import HighlightedText from "./styledComponents/HighlightedText";
 import ColumnLevel from "./styledComponents/ColumnLevel";
+import { useNavigate } from "react-router";
 import { useState, JSX, useEffect} from "react";
 
 export default function TestContainer({
@@ -13,6 +14,7 @@ export default function TestContainer({
   footer?: JSX.Element;
   backIsImg?: boolean;
 }) {
+  const navigate = useNavigate();
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const [layoutForMainBanner, setLayoutForMainBanner] = useState("desktop");
   const textLevel =
@@ -88,6 +90,10 @@ export default function TestContainer({
     )
   }
 
+  const buttonWithfunc = <button className="home-test-container-left-btn" onClick={()=>{
+    navigate("/tests")
+  }}>пройти тест</button>
+
   return (
     <div
       className="home-test-container-with-footer"
@@ -104,7 +110,7 @@ export default function TestContainer({
             не знаєш який курс тобі потрібен?
           </div>
           {textP}
-          {layoutForMainBanner ==="desktop" ? <button className="home-test-container-left-btn">пройти тест</button> : null}
+          {layoutForMainBanner ==="desktop" ? buttonWithfunc : null}
         </div>
 
         <div className="home-test-container-right">
@@ -127,7 +133,7 @@ export default function TestContainer({
             ))}
           </div>
         </div>
-        {layoutForMainBanner ==="mobile" ? <button className="home-test-container-left-btn">пройти тест</button> : null}
+        {layoutForMainBanner ==="mobile" ? buttonWithfunc : null}
       </div>
       {footer ? <div style={{ marginTop: 40 }}>{footer}</div> : null}
     </div>

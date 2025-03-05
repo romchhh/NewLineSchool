@@ -7,22 +7,25 @@
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.5px;
-    color: #AE88AD;
+    color: #484848;
     outline: none;
     padding: 4px 2px;
     background: transparent;
 }
 .home-free-lessons-form-input.mobile{
-    color: black;
     font-weight: 500;
     padding-left: 15px;
     padding-bottom: 0;
 }
 .home-free-lessons-form-input.mobile::placeholder{
     text-transform: uppercase;
-    color: black;
+    color: #484848;
 }
 .home-free-lessons-form-input::placeholder{
-    /* text-transform: uppercase; */
     color: #AE88AD;
+}
+.home-free-lessons-form-input.error::placeholder {
+    /* border: 2px solid red;
+    background-color: rgba(255, 0, 0, 0.1); */
+    color: red;
 }

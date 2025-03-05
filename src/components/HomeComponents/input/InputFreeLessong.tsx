@@ -5,12 +5,16 @@ export default function InputFreeLessong({
   placeholder,
   type,
   isMobile,
+  hasError,
+  setError
 }: {
   inputValue: string;
   setInputValue: (value: string) => void;
   placeholder: string;
   type: string;
   isMobile: boolean;
+  hasError: boolean;
+  setError: (value: boolean) => void;
 }) {
   const formatPhoneNumber = (value: string) => {
     const numbers = value.replace(/\D/g, "").replace(/^380/, "").slice(0, 10); 
@@ -39,6 +43,9 @@ export default function InputFreeLessong({
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const rawValue = e.target.value.replace(/[^0-9]/g, ""); 
+    if (e.target.value.trim() !== "") {
+      setError(false);
+    }
     if (type === "tel") {
       setInputValue(formatPhoneNumber(rawValue)); 
     } else {
@@ -47,21 +54,25 @@ export default function InputFreeLessong({
   };
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === "Backspace" && inputValue) {
+    if ((e.key === "Backspace" && inputValue)) {
       e.preventDefault(); 
       const cleaned = inputValue.replace(/[^0-9]/g, "").slice(0, -1); 
       setInputValue(formatPhoneNumber(cleaned)); 
     }
+    if (e.key === "Backspace" && e.ctrlKey) {
+      e.preventDefault();
+      setInputValue(""); 
+    }
   };
   return (
     <input
-      className={`home-free-lessons-form-input ${isMobile ? "mobile" : ""}`}
+      className={`home-free-lessons-form-input ${isMobile ? "mobile" : ""} ${hasError ? "error" : ""}`}
       type={type}
       value={inputValue}
       placeholder={placeholder}
       onChange={handleChange}
       onKeyDown={type === "tel"? handleKeyDown : ()=>{}}
-      maxLength={type === "tel" ? 17 : 25}
+      maxLength={type === "tel" ? 17  : type === "email" ? 40 : 25}
     />
   );
 }
