@@ -2,7 +2,7 @@ import "./css/TestContainer.css";
 import HighlightedTextWithDots from "./styledComponents/HighlightedTextWithDots";
 import HighlightedText from "./styledComponents/HighlightedText";
 import ColumnLevel from "./styledComponents/ColumnLevel";
-import { useNavigate } from "react-router";
+import { useNavigate } from "react-router-dom";
 import { useState, JSX, useEffect} from "react";
 
 export default function TestContainer({

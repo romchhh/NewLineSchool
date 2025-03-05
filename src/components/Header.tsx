@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { NavLink, useNavigate } from "react-router";
+import { NavLink, useNavigate } from "react-router-dom";
 import "./css/Header.css";
 
 export default function Header({ isHomePage }: { isHomePage: boolean }) {

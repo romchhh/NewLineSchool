@@ -1,5 +1,5 @@
 import "./css/TestsPage.css";
-import { useNavigate } from "react-router";
+import { useNavigate } from "react-router-dom";
 import {test_descriptions} from "../dicts/test";
 import { FaArrowLeft } from "react-icons/fa6";
 export default function TestsPage(){
@@ -40,7 +40,7 @@ export default function TestsPage(){
                     return <div className="tests-page-container-body-test" key={testTitle.id} onClick={()=>{
                         navigate(`/tests/${testTitle.id}`, {
                             state: {testTitleStarting: testTitle.title, testDescription: test_descriptions[testTitle.id]} },
-                        );
+                        });
                     }}>
                         <div className="tests-page-container-body-test-text">{testTitle.title_elem}</div>
                         <button className="tests-page-container-body-test-button"><img src="src/assets/elements/arrow_right_white.png" alt="" /></button>

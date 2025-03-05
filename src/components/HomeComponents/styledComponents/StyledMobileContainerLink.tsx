@@ -1,5 +1,5 @@
 import "./css/StyledMobileContainerLink.css";
-import { useNavigate } from "react-router";
+import { useNavigate } from "react-router-dom";
 import { ReactNode } from "react";
 export default function StyledMobileContainerLink({children, link}: {children: ReactNode; link: string}) {
     const navigate = useNavigate();

@@ -1,4 +1,4 @@
-import { Outlet, useLocation } from "react-router";
+import { Outlet, useLocation } from "react-router-dom";
 import Header from "../components/Header";
 import "./css/Root.css";
 import Footer from "../components/Footer";
