@@ -1,15 +1,14 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Root from "./pages/Root";
-import Home from "./pages/Home";
-import ForSchoolchildren from "./pages/ForSchoolchildren";
-import ForAdults from "./pages/ForAdults";
-import PrepareForExams from "./pages/PrepareForExams";
-import OurClubs from "./pages/OurClubs";
-import TestsPage from "./pages/TestsPage";
-import TestStartingPage from "./pages/TestStartingPage";
-
-export default function App() {
-  const router = createBrowserRouter([
+import { createHashRouter, RouterProvider } from "react-router-dom"
+import Root from "./pages/Root"
+import Home from "./pages/Home"
+import ForSchoolchildren from "./pages/ForSchoolchildren"
+import ForAdults from "./pages/ForAdults"
+import PrepareForExams from "./pages/PrepareForExams"
+import OurClubs from "./pages/OurClubs"
+import TestsPage from "./pages/TestsPage"
+import TestStartingPage from "./pages/TestStartingPage"
+export default function App(){
+  const router = createHashRouter([
     {
       path: "/",
       element: <Root />,
@@ -48,7 +47,8 @@ export default function App() {
       path: "/tests/:testId",
       element: <TestStartingPage />
     }
-  ]);
+  ])
 
-  return <RouterProvider router={router} />;
+
+  return <RouterProvider router={router} />
 }
