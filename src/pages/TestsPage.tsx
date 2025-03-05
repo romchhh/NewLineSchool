@@ -39,7 +39,7 @@ export default function TestsPage(){
                 {testTitles.map((testTitle)=>{
                     return <div className="tests-page-container-body-test" key={testTitle.id} onClick={()=>{
                         navigate(`/tests/${testTitle.id}`, {
-                            state: {testTitleStarting: testTitle.title, testDescription: test_descriptions[testTitle.id]} },
+                            state: {testTitleStarting: testTitle.title, testDescription: test_descriptions[testTitle.id]}
                         });
                     }}>
                         <div className="tests-page-container-body-test-text">{testTitle.title_elem}</div>
