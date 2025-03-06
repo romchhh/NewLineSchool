@@ -35,7 +35,7 @@ export default function OurClubsInfoBoxContainer({
           {type1TextRight.map((text, index) => (
             <div key={index} className="club-info-box-body-type1-right-item">
               <div className="club-info-box-body-type1-right-item-img">
-                <img src="public/assets/elements/arrow_right.png" alt="" />
+                <img src="./assets/elements/arrow_right.png" alt="" />
               </div>
               <div className="club-info-box-body-type1-right-item-text">
                 {text}
@@ -107,7 +107,7 @@ export default function OurClubsInfoBoxContainer({
                   className="club-info-box-body-type3-right-body-item"
                 >
                   <div className="club-info-box-body-type3-right-body-item-img">
-                    <img src="public/assets/elements/arrow_right.png" alt="" />
+                    <img src="./assets/elements/arrow_right.png" alt="" />
                   </div>
                   <div className="club-info-box-body-type3-right-body-item-text">
                     {text}
@@ -135,7 +135,7 @@ export default function OurClubsInfoBoxContainer({
       <>
         <div className="club-info-box-body-type4-left">
           <div className="club-info-box-body-type4-left-arrow">
-            <img src="public/assets/elements/arrow_up_down_diff.png" alt="" />
+            <img src="./assets/elements/arrow_up_down_diff.png" alt="" />
           </div>
           <div className="club-info-box-body-type4-left-upper">
             Граматика - це ключ до того щоб впевнено і вільно користуватись
@@ -169,7 +169,7 @@ export default function OurClubsInfoBoxContainer({
                     className="club-info-box-body-type4-right-body-text-item"
                   >
                     <div className="club-info-box-body-type4-right-body-text-item-img">
-                      <img src="public/assets/elements/arrow_right.png" alt="" />
+                      <img src="./assets/elements/arrow_right.png" alt="" />
                     </div>
                     <div className="club-info-box-body-type4-right-body-text-item-text">
                       {text}

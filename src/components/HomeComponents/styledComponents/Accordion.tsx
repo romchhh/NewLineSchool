@@ -8,7 +8,7 @@ export default function Accordion({ title, content }: { title: string; content: 
             <div className="accordion-header">
                 <span>{title}</span>
                 {/* {isOpen ? img : "down"} */}
-                <img src="public/assets/elements/accordionBtn.png" className={`accordion-btn ${isOpen ? "open" : ""}`} alt="" />
+                <img src="./assets/elements/accordionBtn.png" className={`accordion-btn ${isOpen ? "open" : ""}`} alt="" />
             </div>
             {isOpen && <div className="accordion-content">{content}</div>}
         </div>

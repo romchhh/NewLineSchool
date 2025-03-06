@@ -1,5 +1,5 @@
 .home-container {
-    background-image: url('public/assets/background/backBanner.png');
+    background-image: url('./assets/background/backBanner.png');
     background-size: cover;
     width: 100%;
     position: relative;

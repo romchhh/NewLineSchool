@@ -6,7 +6,7 @@ export default function BenefitBox({title, content, image}:{title:string, conten
             <div className="home-learning-benefits-box-content">
                 {content.map((text, index) => {
                     return <div key={index} className="home-learning-benefits-box-content-container">
-                        <div className="home-learning-benefits-box-content-check-mark"><img src="public/assets/elements/checkMark.png" alt="" /></div>
+                        <div className="home-learning-benefits-box-content-check-mark"><img src="./assets/elements/checkMark.png" alt="" /></div>
                         <div className="home-learning-benefits-box-content-text">{text}</div>
                     </div>
                 })}

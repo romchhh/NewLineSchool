@@ -23,7 +23,7 @@ export default function LessonsDescriptionContainer() {
                 </div>)}
             </div>
             <div className="home-lessons-description-img">
-                <img src="public/assets/images/lessonsDescription.jpg" alt="" />
+                <img src="./assets/images/lessonsDescription.jpg" alt="" />
             </div>
         </div>
     </div>

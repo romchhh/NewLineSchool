@@ -8,7 +8,7 @@ export default function ReviewBox({ name, rating, text }: { name: string; rating
         <div className="home-reviews-box-header-rating">
           {Array.from({ length: rating }, (_, i) => (
             <span key={i} className="home-reviews-box-header-rating-star">
-              <img src="public/assets/elements/star.png" alt="star" />
+              <img src="./assets/elements/star.png" alt="star" />
             </span>
           ))}
         </div>

@@ -19,7 +19,7 @@ export default function AdultsAboutLessons(){
             <div className="for-adults-about-lessons-info-left-title-con">
                 <div className="for-adults-about-lessons-info-left-title">Наш Фокус <br />та Мета</div>
                 <div className="for-adults-about-lessons-info-left-img">
-                    <img src="public/assets/elements/star_rounded.png" alt="" />
+                    <img src="./assets/elements/star_rounded.png" alt="" />
                 </div>
             </div>
             <div className="for-adults-about-lessons-info-left-body">

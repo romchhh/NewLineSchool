@@ -84,7 +84,7 @@ export default function ForUsImportant() {
         <div className="home-for-us-important-text-container-mobile-title">
           A також ми допоможемо{" "}
           <img
-            src="public/assets/elements/arrow_up_right.png"
+            src="./assets/elements/arrow_up_right.png"
             className="home-for-us-important-text-container-mobile-img"
             alt=""
           />
@@ -103,7 +103,7 @@ export default function ForUsImportant() {
     <div className="home-for-us-important-main-container">
       <div className="scroll-to-see-more">
           SCROLL TO SEE MORE
-          <img src="public/assets/elements/arrow_bottom.png" alt="" />
+          <img src="./assets/elements/arrow_bottom.png" alt="" />
         </div>
       <div className="home-for-us-important-container">
         <div className="home-for-us-important-title-container">
@@ -122,7 +122,7 @@ export default function ForUsImportant() {
         </div>
         <div className="home-for-us-important-content">
           <div className="home-for-us-important-img">
-            <img src="public/assets/images/forUsImportant.png" alt="" />
+            <img src="./assets/images/forUsImportant.png" alt="" />
           </div>
           {content}
         </div>

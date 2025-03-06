@@ -7,6 +7,6 @@ export default function ForAdults(){
     return <div className="for-adults-container">
         <AdultsBanner />
         <AdultsAboutLessons />
-        <TestContainer backImg="public/assets/background/backForTest2.png" backIsImg={false} footer={<Footer background={false}/>}/>
+        <TestContainer backImg="./assets/background/backForTest2.png" backIsImg={false} footer={<Footer background={false}/>}/>
     </div>
 }

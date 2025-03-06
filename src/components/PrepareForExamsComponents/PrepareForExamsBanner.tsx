@@ -65,7 +65,7 @@ export default function PrepareForExamsBanner() {
                     className="prepare-for-exams-banner-mid-body-item"
                   >
                     <div className="prepare-for-exams-banner-mid-body-item-img">
-                      <img src="public/assets/elements/arrow_right.png" alt="" />
+                      <img src="./assets/elements/arrow_right.png" alt="" />
                     </div>
                     <div className="prepare-for-exams-banner-mid-body-item-text">
                       {text}
@@ -76,7 +76,7 @@ export default function PrepareForExamsBanner() {
             </div>
           </div>
           <div className="prepare-for-exams-banner-right">
-            <img src="public/assets/images/PrepareForExamsBanner.png" alt="" />
+            <img src="./assets/images/PrepareForExamsBanner.png" alt="" />
           </div>
         </div>
       ) : (
@@ -93,7 +93,7 @@ export default function PrepareForExamsBanner() {
                     className="prepare-for-exams-banner-mid-body-item"
                   >
                     <div className="prepare-for-exams-banner-mid-body-item-img">
-                      <img src="public/assets/elements/arrow_right.png" alt="" />
+                      <img src="./assets/elements/arrow_right.png" alt="" />
                     </div>
                     <div className="prepare-for-exams-banner-mid-body-item-text">
                       {text}
@@ -104,7 +104,7 @@ export default function PrepareForExamsBanner() {
             </div>
           </div>
           <div className="prepare-for-exams-banner-right">
-            <img src="public/assets/images/PrepareForExamsBanner.png" alt="" />
+            <img src="./assets/images/PrepareForExamsBanner.png" alt="" />
           </div>
         </>
       )}

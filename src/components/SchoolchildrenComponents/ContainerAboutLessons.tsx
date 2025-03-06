@@ -64,7 +64,7 @@ export default function ContainerAboutLessons({
             (Чим більше, тим вигідніше)
           </div>
           <div className="container-about-lessons-bottom-img">
-            <img src="public/assets/elements/long_line.png" alt="" />
+            <img src="./assets/elements/long_line.png" alt="" />
           </div>
           <div className="container-about-lessons-bottom-footer">
             Для уточнення зв'язатись з <br /> менеджером

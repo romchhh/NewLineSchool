@@ -32,7 +32,7 @@ export default function SchoolchildrenBanner() {
       </div>
       <div className="schoolchildren-banner-right">
         <div className="schoolchildren-banner-right-img">
-          <img src="public/assets/images/forSchoolchildren.png" alt="" />
+          <img src="./assets/images/forSchoolchildren.png" alt="" />
         </div>
         <div className="schoolchildren-banner-right-text">
         school  ·  exams  ·  speak club
