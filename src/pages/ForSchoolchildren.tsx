@@ -58,7 +58,7 @@ export default function ForSchoolchildren() {
       ],
       bottomExtraCon: -60,
       bodyCenterElements:[
-        <>Тривалість курсу: <span>10 місяців (Вересень-Червень)</span></>,
+        <>Тривалість курсу: <span>12 місяців (Вересень-Червень)</span></>,
         <>Одне заняття: <span>60 хв</span></>,
         <>Періодичність: <span>2 рази на тиждень</span></>,
         <>Дітей у групі: <span>до 10 учнів</span></>,
