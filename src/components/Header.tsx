@@ -45,14 +45,14 @@ export default function Header({ isHomePage }: { isHomePage: boolean }) {
       className={`header-container ${isHomePage ? "header-transparent" : ""}`}
     >
       <img
-        src="public/assets/logo.png"
+        src="assets/logo.png"
         alt="Logo"
         className="header-logo"
         onClick={() => navigate("/")}
       />
 
       <div className="hamburger" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-        <img src="public/assets/elements/menu.png" alt="Меню" />
+        <img src="assets/elements/menu.png" alt="Меню" />
       </div>
 
       <div className={`header-links ${isMenuOpen ? "open" : ""}`}>

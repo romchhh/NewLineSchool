@@ -30,8 +30,8 @@ export default function Footer({background}: {background: boolean}) {
                     <h2>пошта@gmail.com</h2>
                 </div>
                 <div className="footer-info-socials">
-                    <img src="public/assets/instagram-icon.png" alt="" className="footer-inst" />
-                    <img src="public/assets/telegram-icon.png" alt="" className="footer-tg"/>
+                    <img src="assets/instagram-icon.png" alt="" className="footer-inst" />
+                    <img src="assets/telegram-icon.png" alt="" className="footer-tg"/>
                 </div>
             </div>  
             <div className="footer-info-work-schedule-container">
@@ -45,7 +45,7 @@ export default function Footer({background}: {background: boolean}) {
             </div>
         </div>
         <div className="footer-logo">
-            <img src="public/assets/logo.png" alt="" />
+            <img src="assets/logo.png" alt="" />
         </div>
     </div>
 }
