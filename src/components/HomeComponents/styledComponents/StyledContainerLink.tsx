@@ -1,6 +1,8 @@
 import "./css/StyledContainerLink.css";
 import { useNavigate } from "react-router-dom";
 import { ReactNode } from "react";
+import arrowRight from "../../../assets/elements/arrow_right.png";
+
 export default function StyledContainerLink({children, link}: {children: ReactNode; link: string}) {
     const navigate = useNavigate();
   return (
@@ -11,7 +13,7 @@ export default function StyledContainerLink({children, link}: {children: ReactNo
       <div className="styled-container-link-button" onClick={() => {
             navigate(link);
       }}>
-        <img src="./assets/elements/arrow_right.png" alt="" />
+        <img src={arrowRight} alt="" />
       </div>
     </div>
   );

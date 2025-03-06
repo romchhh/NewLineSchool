@@ -2,6 +2,7 @@ import "./css/TestsPage.css";
 import { useNavigate } from "react-router-dom";
 import {test_descriptions} from "../dicts/test";
 import { FaArrowLeft } from "react-icons/fa6";
+import arrowRightWhite from "../assets/elements/arrow_right_white.png";
 
 export default function TestsPage(){
     const navigate = useNavigate();
@@ -44,7 +45,7 @@ export default function TestsPage(){
                         });
                     }}>
                         <div className="tests-page-container-body-test-text">{testTitle.title_elem}</div>
-                        <button className="tests-page-container-body-test-button"><img src="./assets/elements/arrow_right_white.png" alt="" /></button>
+                        <button className="tests-page-container-body-test-button"><img src={arrowRightWhite} alt="" /></button>
                     </div>
                 })}
             </div>
