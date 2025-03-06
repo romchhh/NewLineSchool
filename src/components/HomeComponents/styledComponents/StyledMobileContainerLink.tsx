@@ -11,7 +11,7 @@ export default function StyledMobileContainerLink({children, link}: {children: R
       <div className="styled-mobile-container-link-button" onClick={() => {
             navigate(link);
       }}>
-        <img src="/assets/elements/arrow_right.png" alt="" />
+        <img src="public/assets/elements/arrow_right.png" alt="" />
       </div>
     </div>
   );

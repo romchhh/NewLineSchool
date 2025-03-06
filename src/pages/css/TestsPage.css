@@ -1,5 +1,5 @@
 .tests-page{
-    background: url("src/assets/background/backBanner.png");
+    background: url("public/assets/background/backBanner.png");
     display: flex;
     flex-direction: column;
     align-items: center;

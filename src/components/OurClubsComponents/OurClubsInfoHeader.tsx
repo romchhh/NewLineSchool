@@ -19,7 +19,7 @@ export default function OurClubsInfoHeader() {
                 {clubsInfoBodyText.map((text, index) => (
                     <div key={index} className="clubs-info-header-body-text-item">
                         <div className="clubs-info-header-body-text-item-img">
-                            <img src="src/assets/elements/star_rounded.png" alt="" />
+                            <img src="public/assets/elements/star_rounded.png" alt="" />
                         </div>
                         <div className="clubs-info-header-body-text-item-text">{text}</div>
                     </div>

@@ -102,7 +102,7 @@ export default function TestContainer({
       <div
         className="home-test-container"
         style={{
-          backgroundImage: backIsImg === false ? "none" : (layoutForMainBanner === "desktop" ? `url(${backImg})`: `url('src/assets/background/backForTestMobile.png')`),
+          backgroundImage: backIsImg === false ? "none" : (layoutForMainBanner === "desktop" ? `url(${backImg})`: `url('public/assets/background/backForTestMobile.png')`),
         }}
       >
         <div className="home-test-container-left">

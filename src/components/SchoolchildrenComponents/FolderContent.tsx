@@ -70,7 +70,7 @@ export default function FolderContent({
                   <div key={index} className="lower-part-text-item">
                     <div className="lower-part-text-item-img">
                       <img
-                        src="src/assets/elements/wierd_arrow_right.png"
+                        src="public/assets/elements/wierd_arrow_right.png"
                         alt=""
                       />
                     </div>
@@ -84,7 +84,7 @@ export default function FolderContent({
                 <div key={index} className="lower-part-text-item">
                   <div className="lower-part-text-item-img">
                     <img
-                      src="src/assets/elements/wierd_arrow_right.png"
+                      src="public/assets/elements/wierd_arrow_right.png"
                       alt=""
                     />
                   </div>
@@ -124,7 +124,7 @@ export default function FolderContent({
           </div>
         </div>
         <div className="folder-content-body-img">
-          <img src="src/assets/images/folderImage.png" alt="" />
+          <img src="public/assets/images/folderImage.png" alt="" />
         </div>
         <div className="folder-content-body-info-studying">
           <ContainerAboutLessons bodyCenterElements={bodyCenterElements} bodyBottomElements={bodyBottomElements}/>

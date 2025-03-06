@@ -47,7 +47,7 @@ export default function AdultsBanner() {
         </div>
       </div>
       <div className="for-adults-banner-img">
-        <img src="src/assets/images/forAdults.png" alt="" />
+        <img src="public/assets/images/forAdults.png" alt="" />
       </div>
     </div>
   );

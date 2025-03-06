@@ -9,7 +9,7 @@ export default function OurClubsBanner() {
             </div>
         </div>
         <div className="our-clubs-banner-right">
-            <img src="src/assets/images/OurClubsBanner.png" alt="" />
+            <img src="public/assets/images/OurClubsBanner.png" alt="" />
         </div>
     </div>;
 }

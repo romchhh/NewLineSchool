@@ -10,7 +10,7 @@
     font-family: "Unbounded", sans-serif;
     color: white;
     border-radius: 20px;
-    background-image: url("src/assets/elements/container_link.png");
+    background-image: url("public/assets/elements/container_link.png");
     background-size: cover;
   }
   

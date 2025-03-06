@@ -10,12 +10,12 @@ export default function LearningBenefitsContainer() {
                 "Маленькі групи",
                 "Регулярні зходи та спілкування"
             ],
-            image:"src/assets/images/benefitsBoxImages/box1.png"
+            image:"public/assets/images/benefitsBoxImages/box1.png"
         },
         {
             title:"сертифіковані викладачі",
             contentText:["Celta teachers", "TKT teachers", "Досвід роботи з учнями різного віку та рівня"],
-            image:"src/assets/images/benefitsBoxImages/box2.png"
+            image:"public/assets/images/benefitsBoxImages/box2.png"
         },
         {
             title:"гнучкі та зручні заняття",
@@ -25,7 +25,7 @@ export default function LearningBenefitsContainer() {
                 "Є також можливість поєднувати заняття в класі з онлайн-уроками",
                 "Є ранкові, денні та вечірні заняття"
             ],
-            image:"src/assets/images/benefitsBoxImages/box3.png"
+            image:"public/assets/images/benefitsBoxImages/box3.png"
         },
         {
             title:"Додаткові сервіси",
@@ -33,7 +33,7 @@ export default function LearningBenefitsContainer() {
                 "Безкоштовне онлайн тестування на визначення рівня",
                 "Розмовні клуби для малих та дорослих",
             ],
-            image:"src/assets/images/benefitsBoxImages/box4.png"
+            image:"public/assets/images/benefitsBoxImages/box4.png"
         }
     ];
     return (

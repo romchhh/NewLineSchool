@@ -59,7 +59,7 @@ export default function FreeLessonContainer({
         </div>
         <div className="home-free-lessons-content">
           <div className="spin-arrow">
-            <img src="src/assets/elements/spin_arrow.png" alt="" />
+            <img src="public/assets/elements/spin_arrow.png" alt="" />
           </div>
           <div className="home-free-lessons-text">
             отримай безкоштовний урок!

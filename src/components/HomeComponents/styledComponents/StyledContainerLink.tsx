@@ -11,7 +11,7 @@ export default function StyledContainerLink({children, link}: {children: ReactNo
       <div className="styled-container-link-button" onClick={() => {
             navigate(link);
       }}>
-        <img src="/assets/elements/arrow_right.png" alt="" />
+        <img src="public/assets/elements/arrow_right.png" alt="" />
       </div>
     </div>
   );

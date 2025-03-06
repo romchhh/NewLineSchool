@@ -58,10 +58,10 @@ export default function ReviewsContainer() {
             </div>
             <div className="home-reviews-boxes-btns">
                 <button className="scroll-btn left" onClick={() => scroll("left")}>
-                    <img src="src/assets/elements/arrow_left.png" alt="" />
+                    <img src="public/assets/elements/arrow_left.png" alt="" />
                 </button>
                 <button className="scroll-btn right" onClick={() => scroll("right")}>
-                    <img src="src/assets/elements/arrow_right.png" alt="" />
+                    <img src="public/assets/elements/arrow_right.png" alt="" />
                 </button>
             </div>
         </div>

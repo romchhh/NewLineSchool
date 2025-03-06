@@ -8,7 +8,7 @@ export default function ForSchoolchildren() {
   const isMobile = layoutForFolder === "mobile";
   const folderData = [
     {
-      backgroundImg: isMobile? "src/assets/elements/folderElement1Mobile.png" :"src/assets/elements/folderElement1.png",
+      backgroundImg: isMobile? "public/assets/elements/folderElement1Mobile.png" :"public/assets/elements/folderElement1.png",
       title: (
         <>
           1 - англійська для {isMobile? "":<br />} <span>дітей (1-4 класи)</span>
@@ -71,7 +71,7 @@ export default function ForSchoolchildren() {
       ],
     },
     {
-      backgroundImg: isMobile?"src/assets/elements/folderElement2Mobile.png" : "src/assets/elements/folderElement2.png",
+      backgroundImg: isMobile?"public/assets/elements/folderElement2Mobile.png" : "public/assets/elements/folderElement2.png",
       title: (
         <>
           2 - навчання для {isMobile? "":<br />} <span>підлітків (5-9 класи)</span>
@@ -194,7 +194,7 @@ export default function ForSchoolchildren() {
             </span>
           </>
         }
-        backgroundImg={isMobile? "src/assets/elements/folderElement3Mobile.png": "src/assets/elements/folderElement3.png"}
+        backgroundImg={isMobile? "public/assets/elements/folderElement3Mobile.png": "public/assets/elements/folderElement3.png"}
         bodyCenterElements={bodyCenterElements}
         bodyBottomElements={bodyBottomElements}
         type="simple"

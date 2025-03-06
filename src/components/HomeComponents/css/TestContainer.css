@@ -1,5 +1,5 @@
 .home-test-container-with-footer{
-    background-image: url('src/assets/background/backForTest2.png');
+    background-image: url('public/assets/background/backForTest2.png');
     background-size: cover;
     background-repeat:no-repeat;
 }

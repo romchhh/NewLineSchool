@@ -28,7 +28,7 @@ export default function HomeMainBanner() {
           <div className="home-main-banner-title-text-p3">SCHOOL</div>
         </div>
         <div className="home-main-banner-img">
-          <img src="src/assets/images/homeMainBanner.png" alt="" />
+          <img src="public/assets/images/homeMainBanner.png" alt="" />
         </div>
         <div className="home-main-banner-p">
           Школа англійської мови та офіційний {layoutForMainBanner==="mobile"? null: <br/>}

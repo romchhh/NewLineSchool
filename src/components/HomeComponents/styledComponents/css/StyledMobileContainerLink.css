@@ -1,5 +1,5 @@
 .styled-mobile-container-link{
-    background-image: url("src/assets/elements/mobile_container_link.png");
+    background-image: url("public/assets/elements/mobile_container_link.png");
     background-size: contain;
     background-repeat: no-repeat;
     width: 135px;

@@ -51,13 +51,13 @@ export default function ColumnLevel({
     >
       {index !== 5 && (
         <div className="column-level-arrow" style={{ top: index === 0 ? -50 : -60, left: layoutForMainBanner === "mobile" ? 10 : 20 }}>
-          <img src="src/assets/elements/arrow_up_down.png" alt="Arrow" />
+          <img src="public/assets/elements/arrow_up_down.png" alt="Arrow" />
         </div>
       )}
       <div className="column-level-container-title">{title}</div>
       {active && (
         <div className={`column-level-container-active-box ${layoutForMainBanner === "mobile" && index < 3 ? "mobile" : ""}`}>
-          <img src="src/assets/elements/activeBoxLevel.png" alt="Active Box" className="active-box-bg" />
+          <img src="public/assets/elements/activeBoxLevel.png" alt="Active Box" className="active-box-bg" />
           <div className="active-box-text">{text}</div>
         </div>
       )}
